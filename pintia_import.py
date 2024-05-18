@@ -30,9 +30,9 @@ def main():
         _load_problems = _load[p.id]
         exam_status = api.problem_sets_status(p.id)
         for problem in exam_status.problem_status:
-            if problem.problem_submission_status == 'PROBLEM_ACCEPTED' and problem.id in _load_problems:
+            if problem.problem_submission_status != 'PROBLEM_ACCEPTED' and problem.id in _load_problems:
                 print(f'Submit {p.name}:{problem.id}')
-                #api.problem_sets_exam_problem_submission(**_load_problems[problem.id])
+                api.problem_sets_exam_problem_submission(**_load_problems[problem.id])
 
 
 if __name__ == '__main__':
