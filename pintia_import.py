@@ -4,11 +4,11 @@
 import sys
 import os
 import os.path as op
-from pintia import Pintia
+from pintia import Pintia, ProblemSubmissionStatus
 import json as j
 from pintia.problem_sets import ProblemSetsItem
 from pintia.problem_status import ProblemStatus
-from utils import load_cookie
+from utils import load_cookie, parse_select_args
 
 def main():
     if len(sys.argv) < 3:
@@ -24,15 +24,15 @@ def main():
         p = problem_sets[i]
         print(f'[{i}] name={p.name} id={p.id} status={p.status}')
 
-    selecteds = [int(i) for i in input(f'Select 0-{len(problem_sets) - 1}? ').split('-') if i.isdigit()]
+    selecteds = parse_select_args(input(f'Select 0-{len(problem_sets) - 1}? '))
     for selected in selecteds:
         p = problem_sets[selected]
         _load_problems = _load[p.id]
         exam_status = api.problem_sets_status(p.id)
         for problem in exam_status.problem_status:
-            if problem.problem_submission_status != 'PROBLEM_ACCEPTED' and problem.id in _load_problems:
-                print(f'Submit {p.name}:{problem.id}')
+            if problem.problem_submission_status != ProblemSubmissionStatus.PROBLEM_ACCEPTED.value and problem.id in _load_problems:
                 api.problem_sets_exam_problem_submission(**_load_problems[problem.id])
+                print(f'Submit {p.name}:{problem.id}')
 
 
 if __name__ == '__main__':

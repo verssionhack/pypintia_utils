@@ -31,20 +31,23 @@ class Pintia:
             cookie = parse_cookie(cookie)
         self.cookie = cookie
         self.session.cookies.update(self.cookie)
+        self._profile = self.current_user()
+        print(f'Load as {self._profile.user.nickname}')
 
     def __init__(self, cookie: dict | str):
+        self.url = f'https://pintia.cn'
         self.session = r.session()
-
-        self.load_cookie(cookie)
-
         self.session.headers['user-agent'] = USER_AGENT
         self.session.headers['accept'] = 'application/json;charset=UTF-8'
 
-        self.url = f'https://pintia.cn'
+
+        self._profile = None
+        self.load_cookie(cookie)
+
 
     def on_rate_limit(self, content):
         if 'RATE_LIMIT_EXCEEDED' in content:
-            rate_rest = 60
+            rate_rest = 5
             while rate_rest > 0:
                 print(f'Sleep {rate_rest}s: {content}', end='\r', flush=True)
                 time.sleep(1)

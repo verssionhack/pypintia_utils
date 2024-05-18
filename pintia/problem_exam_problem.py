@@ -37,6 +37,8 @@ class ProgrammingProblemConfig:
 
 
     def __init__(self, data: dict):
+        if data == None:
+            return None
 
         self.time_limit = data.get('time_limit')
         self.memory_limit = data.get('memory_limit')
