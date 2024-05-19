@@ -34,6 +34,9 @@ class Pintia:
         self._profile = self.current_user()
         print(f'Load as {self._profile.user.nickname}')
 
+    def login(self, username: str, password: str):
+        pass
+
     def __init__(self, cookie: dict | str):
         self.url = f'https://pintia.cn'
         self.session = r.session()
@@ -47,7 +50,7 @@ class Pintia:
 
     def on_rate_limit(self, content):
         if 'RATE_LIMIT_EXCEEDED' in content:
-            rate_rest = 5
+            rate_rest = 3
             while rate_rest > 0:
                 print(f'Sleep {rate_rest}s: {content}', end='\r', flush=True)
                 time.sleep(1)
@@ -110,6 +113,10 @@ class Pintia:
         uri = f'/api/problem-sets/{problem_sets_id}/exams'
         return Exams(self._get(uri))
 
+    def problem_sets_exams_start(self, problem_sets_id: str):
+        uri = f'/api/problem-sets/{problem_sets_id}/exams'
+        return self._post(uri)
+
     def problem_sets_summaries(self, problem_sets_id: str):
         uri = f'/api/problem-sets/{problem_sets_id}/problem-summaries'
         pass
@@ -130,11 +137,11 @@ class Pintia:
         uri = f'/api/problem-sets/{problem_sets_id}/exam-problems/{exam_problem_id}'
         return ProblemExamProblem(self._get(uri))
 
-    def problem_sets_exam_problem_submission(self, problem_sets_id: str, exam_problem_id: str, problem_set_problem_id: str, compiler: str, program_content: str, problem_type: str):
-        uri = f'/api/exams/{problem_sets_id}/submissions'
+    def problem_sets_exam_problem_submission(self, exam_id: str, problem_set_problem_id: str, compiler: str, program_content: str, problem_type: str):
+        uri = f'/api/exams/{exam_id}/submissions'
         return self._post(uri, json= {
             'details':[{
-                'problemId': exam_problem_id,
+                'problemId': '0',
                 'problemSetProblemId': problem_set_problem_id,
                 'programmingSubmissionDetail': {
                     'program': program_content,
@@ -157,4 +164,5 @@ class Pintia:
     def problem_types(self, problem_sets_id: str):
         uri = f'/api/problem-sets/{problem_sets_id}/problem-types'
         return ProblemTypes(self._get(uri))
+    
 

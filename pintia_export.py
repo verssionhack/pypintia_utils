@@ -32,8 +32,7 @@ def main():
                 if problem.problem_type == ProblemType.CODE_COMPLETION.value:
                     last_submission = api.problem_sets_exam_problem_last_submissions(p.id, problem.id)
                     export[p.id][problem.id] = {
-                            'problem_sets_id': p.id,
-                            'exam_problem_id': problem.id,
+                            'problem_set_problem_id': problem.id,
                             'compiler': last_submission.submission.compiler,
                             'program_content': last_submission.submission.submission_details[-1].code_completion_submission_detail.program,
                             'problem_type': last_submission.submission.problem_type,
@@ -42,8 +41,7 @@ def main():
                 if problem.problem_type == ProblemType.PROGRAMMING.value:
                     last_submission = api.problem_sets_exam_problem_last_submissions(p.id, problem.id)
                     export[p.id][problem.id] = {
-                            'problem_sets_id': p.id,
-                            'exam_problem_id': problem.id,
+                            'problem_set_problem_id': problem.id,
                             'compiler': last_submission.submission.compiler,
                             'program_content': last_submission.submission.submission_details[-1].programming_submission_detail.program,
                             'problem_type': last_submission.submission.problem_type,

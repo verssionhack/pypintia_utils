@@ -38,6 +38,7 @@ class Syncer:
 
 
     def select_problem_sets(self):
+        has_problem_ids = [i['problem_sets_id'] for i in self.problem_sets]
         for user_id, handle in self.api_pool.items():
             api = handle['api']
             handle['problem_sets'] = {}
@@ -45,9 +46,10 @@ class Syncer:
                 if not problem_set.id in handle['problem_sets']:
                     handle['problem_sets'][problem_set.id] = {}
                 handle['problem_sets'][problem_set.id]['problem_set'] = problem_set
-                if not problem_set.id in self.problem_sets:
+                if not problem_set.id in has_problem_ids:
                     self.exams_problems[problem_set.id] = {}
 
+                    has_problem_ids.append(problem_set.id)
                     self.problem_sets.append({
                             'problem_sets_id': problem_set.id,
                             'status': problem_set.status,
@@ -70,24 +72,29 @@ class Syncer:
                 problem_set = self.problem_sets[selected]
                 problem_set_id = problem_set['problem_sets_id']
 
+
+                if problem_set['status'] != 'PROCESSING':
+                    api.problem_sets_exams_start(problem_set_id)
+
                 #if problem_set_id in handle['problem_sets'] and handle['problem_sets'][problem_set_id].get('status') == None:
+                #print(api.problem_sets_exams_start(problem_set_id))
+
                 handle['problem_sets'][problem_set_id]['status'] = api.problem_sets_status(problem_set_id)
                 problem_set_status = handle['problem_sets'][problem_set_id]['status']
+
                 for problem in problem_set_status.problem_status:
                     if not problem.id in self.exams_problems[problem_set_id] and problem.problem_submission_status == ProblemSubmissionStatus.PROBLEM_ACCEPTED.value:
                         last_submission = api.problem_sets_exam_problem_last_submissions(problem_set_id, problem.id)
                         if problem.problem_type == ProblemType.CODE_COMPLETION.value:
                             self.exams_problems[problem_set_id][problem.id] = {
-                                    'problem_set_id': problem_set_id,
-                                    'exam_problem_id': problem.id,
+                                    'problem_set_problem_id': problem.id,
                                     'compiler': last_submission.submission.compiler,
                                     'program_content': last_submission.submission.submission_details[-1].code_completion_submission_detail.program,
                                     'problem_type': last_submission.submission.problem_type,
                                     }
                         if problem.problem_type == ProblemType.PROGRAMMING.value:
                             self.exams_problems[problem_set_id][problem.id] = {
-                                    'problem_set_id': problem_set_id,
-                                    'exam_problem_id': problem.id,
+                                    'problem_set_problem_id': problem.id,
                                     'compiler': last_submission.submission.compiler,
                                     'program_content': last_submission.submission.submission_details[-1].programming_submission_detail.program,
                                     'problem_type': last_submission.submission.problem_type,
@@ -101,12 +108,14 @@ class Syncer:
                 problem_set = self.problem_sets[selected]
                 problem_set_id = problem_set['problem_sets_id']
 
+                exams = api.problem_sets_exams(problem_set_id)
+
                 if problem_set_id in handle['problem_sets']:
                     problem_set_status = handle['problem_sets'][problem_set_id]['status']
 
                     for problem in problem_set_status.problem_status:
                         if problem.id in self.exams_problems[problem_set_id] and problem.problem_submission_status != ProblemSubmissionStatus.PROBLEM_ACCEPTED.value:
-                            api.problem_sets_exam_problem_submission(**self.exams_problems[problem_set_id][problem.id])
+                            api.problem_sets_exam_problem_submission(**self.exams_problems[problem_set_id][problem.id], exam_id=exams.exam.id)
                             print(f'Sync submission {problem_set["name"]}:{problem.id} for {api._profile.user.nickname}')
 
 
@@ -125,9 +134,8 @@ def main():
     while True:
         syncer.reload_apis()
         syncer.fetch_accpeted_problems()
-        for k, v in syncer.exams_problems.items():
-            syncer.sync()
-            #print(f'{k}: count={len(v)}', end='\n', flush=True)
+        syncer.sync()
+        #print(f'{k}: count={len(v)}', end='\n', flush=True)
         sleep(1)
 
 
