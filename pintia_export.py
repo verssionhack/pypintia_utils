@@ -12,7 +12,7 @@ from utils import load_cookie, parse_select_args, random_chars
 
 def main():
     if len(sys.argv) < 3:
-        print(f'Usage: {sys.argv[0]} <cookies> <save_path>')
+        print(f'Usage: {sys.argv[0]} <cookie_path> <save_path>')
         exit(-1)
 
     api = Pintia(load_cookie(sys.argv[1]))
@@ -56,7 +56,7 @@ def main():
     except Exception as e:
         print('Error {e}')
         output_path = random_chars(10) + f'.json'
-        print(f'Reexport to {output_path}')
+        print(f'Export to {output_path}')
         open(output_path, 'w').write(output_path)
 
 

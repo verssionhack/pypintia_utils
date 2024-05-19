@@ -12,7 +12,7 @@ from utils import load_cookie, parse_select_args
 
 def main():
     if len(sys.argv) < 3:
-        print(f'Usage: {sys.argv[0]} <cookies> <load_path>')
+        print(f'Usage: {sys.argv[0]} <cookie_path> <load_path>')
         exit(-1)
 
     _load = j.load(open(sys.argv[2], 'r'))
