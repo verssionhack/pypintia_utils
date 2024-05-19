@@ -123,6 +123,7 @@ def main():
     syncer.fetch_accpeted_problems()
 
     while True:
+        syncer.reload_apis()
         syncer.fetch_accpeted_problems()
         for k, v in syncer.exams_problems.items():
             syncer.sync()

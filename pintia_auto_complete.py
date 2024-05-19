@@ -28,7 +28,8 @@ def main():
     for selected in selecteds:
         p = problem_sets[selected]
         exams = api.problem_sets_exams(p.id)
-        for problem in api.problem_sets_exam_list(p.id, exams.exam.id, ProblemType.CODE_COMPLETION.value, 0, 100).problem_set_problems:
+
+        for problem in api.problem_sets_exam_list(p.id, exams.exam.id, ProblemType.PROGRAMMING.value, 0, 100).problem_set_problems:
 
             problem_detail = api.problem_sets_exam_problem(p.id, problem.id)
             print(f'{problem_detail.problem_set_problem.content}')

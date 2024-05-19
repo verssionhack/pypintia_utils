@@ -101,7 +101,8 @@ class Pintia:
         uri = '/api/u/current'
         return UserPacket(self._get(uri))
 
-    def problem_sets(self, limit: int, filter=f'{{"endAtAfter": "{DATE.tm_year:04}-{DATE.tm_mon:02}-{DATE.tm_mday-1:02}T16:00:00.000Z"}}', order_by='END_AT', asc=True):
+    #def problem_sets(self, limit: int, filter=f'{{"endAtAfter": "{DATE.tm_year:04}-{DATE.tm_mon:02}-{DATE.tm_mday-1:02}T16:00:00.000Z"}}', order_by='END_AT', asc=True):
+    def problem_sets(self, limit: int, filter=f'{{"endAtAfter": "{DATE.tm_year:04}-{DATE.tm_mon:02}-{DATE.tm_mday:02}T{DATE.tm_hour:02}:{DATE.tm_min:02}:00.000Z"}}', order_by='END_AT', asc=True):
         uri = f'/api/problem-sets?filter={filter}&limit={limit}&order_by={order_by}&asc={str(asc).lower()}'
         return ProblemSets(self._get(uri))
 
