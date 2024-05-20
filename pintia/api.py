@@ -42,10 +42,17 @@ class Pintia:
         self.session = r.session()
         self.session.headers['user-agent'] = USER_AGENT
         self.session.headers['accept'] = 'application/json;charset=UTF-8'
+        self.last_request_time = time.time()
 
 
         self._profile = None
         self.load_cookie(cookie)
+
+    def update_last_request_time(self):
+        now = time.time()
+        if now - self.last_request_time < 0.2:
+            time.sleep(0.2)
+        self.last_request_time = now
 
 
     def on_rate_limit(self, content):
@@ -60,6 +67,7 @@ class Pintia:
 
 
     def _get(self, uri: str, **args):
+        self.update_last_request_time()
         ret = self.session.get(self.url + uri, **args)
         if ret.status_code != 200:
             if self.on_rate_limit(ret.text):
@@ -79,6 +87,7 @@ class Pintia:
 
 
     def _post(self, uri: str, **args):
+        self.update_last_request_time()
         ret = self.session.post(self.url + uri, **args)
         if ret.status_code != 200:
             if self.on_rate_limit(ret.text):

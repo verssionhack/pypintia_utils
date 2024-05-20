@@ -84,7 +84,7 @@ class Syncer:
 
                 for problem in problem_set_status.problem_status:
                     if not problem.id in self.exams_problems[problem_set_id] and problem.problem_submission_status == ProblemSubmissionStatus.PROBLEM_ACCEPTED.value:
-                        print(f'{api._profile.user.nickname} provide {problem_set_id}:{problem.id}')
+                        print(f'{api._profile.user.nickname} provide {problem_set["name"]}:{problem.id}')
                         last_submission = api.problem_sets_exam_problem_last_submissions(problem_set_id, problem.id)
                         if problem.problem_type == ProblemType.CODE_COMPLETION.value:
                             self.exams_problems[problem_set_id][problem.id] = {

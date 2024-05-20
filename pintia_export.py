@@ -55,7 +55,7 @@ def main():
         print('Error {e}')
         output_path = random_chars(10) + f'.json'
         print(f'Export to {output_path}')
-        open(output_path, 'w').write(output_path)
+        open(output_path, 'w').write(export_s)
 
 
 if __name__ == '__main__':
