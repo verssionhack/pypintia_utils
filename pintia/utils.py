@@ -130,7 +130,7 @@ def parse_cookie(data: str):
     for ktvs in data:
         if not '=' in ktvs:
             continue
-        ktv = ktvs.split('=')
+        ktv = ktvs.split('=', 1)
         ktv[0] = ktv[0].strip().rstrip()
         ktv[1] = ktv[1].strip().rstrip()
         cookies[ktv[0]] = ktv[1]

@@ -84,6 +84,7 @@ class Syncer:
 
                 for problem in problem_set_status.problem_status:
                     if not problem.id in self.exams_problems[problem_set_id] and problem.problem_submission_status == ProblemSubmissionStatus.PROBLEM_ACCEPTED.value:
+                        print(f'{api._profile.user.nickname} provide {problem_set_id}:{problem.id}')
                         last_submission = api.problem_sets_exam_problem_last_submissions(problem_set_id, problem.id)
                         if problem.problem_type == ProblemType.CODE_COMPLETION.value:
                             self.exams_problems[problem_set_id][problem.id] = {
@@ -129,12 +130,17 @@ def main():
     syncer = Syncer(sys.argv[1])
     syncer.reload_apis()
     syncer.select_problem_sets()
-    syncer.fetch_accpeted_problems()
 
     while True:
-        syncer.reload_apis()
-        syncer.fetch_accpeted_problems()
-        syncer.sync()
+        try:
+            syncer.reload_apis()
+            syncer.fetch_accpeted_problems()
+            syncer.sync()
+        except KeyboardInterrupt:
+            print('Exit')
+            exit()
+        except Exception as e:
+            print(f'Error: {e}')
         #print(f'{k}: count={len(v)}', end='\n', flush=True)
         sleep(1)
 
