@@ -8,14 +8,16 @@ from pintia import Pintia, ProblemSubmissionStatus, ProblemType
 import json as j
 from pintia.problem_sets import ProblemSetsItem
 from pintia.problem_status import ProblemStatus
-from utils import load_cookie, parse_select_args, random_chars
+from utils import load_cookie, parse_select_args, random_chars, format_c_code
 
 def main():
+
     if len(sys.argv) < 3:
         print(f'Usage: {sys.argv[0]} <cookie_path> <save_path>')
         exit(-1)
 
     api = Pintia(load_cookie(sys.argv[1]))
+    
     problem_sets = api.problem_sets(10).problem_sets
     for i in range(len(problem_sets)):
         p = problem_sets[i]
@@ -34,7 +36,7 @@ def main():
                     export[p.id][problem.id] = {
                             'problem_set_problem_id': problem.id,
                             'compiler': last_submission.submission.compiler,
-                            'program_content': last_submission.submission.submission_details[-1].code_completion_submission_detail.program,
+                            'program_content': format_c_code(last_submission.submission.submission_details[-1].code_completion_submission_detail.program),
                             'problem_type': last_submission.submission.problem_type,
                             }
                     #print(api.problem_sets_exam_problem_last_submissions(p.id, problem.id).submission.submission_details[-1].code_completion_submission_detail.program)
@@ -43,7 +45,7 @@ def main():
                     export[p.id][problem.id] = {
                             'problem_set_problem_id': problem.id,
                             'compiler': last_submission.submission.compiler,
-                            'program_content': last_submission.submission.submission_details[-1].programming_submission_detail.program,
+                            'program_content': format_c_code(last_submission.submission.submission_details[-1].programming_submission_detail.program),
                             'problem_type': last_submission.submission.problem_type,
                             }
                     #print(api.problem_sets_exam_problem_last_submissions(p.id, problem.id).submission.submission_details[-1].programming_submission_detail.program)

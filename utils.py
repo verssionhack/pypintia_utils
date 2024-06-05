@@ -1,6 +1,23 @@
 from pintia.utils import parse_cookie
 import json as j
 from random import randint
+import os
+
+def format_c_code(text: str):
+    filepath = '/tmp/' + random_chars(20)
+    with open(filepath, 'w') as fd:
+        fd.write(text)
+    
+
+    if not os.path.exists('/bin/indent'):
+        os.system('./install_denpendcies.sh')
+
+    os.system(f'indent -kr -i8 -ts8 -sob -l80 -ss -bs -psl {filepath}')
+
+    return open(filepath, 'r').read()
+
+
+
 
 def parse_select_args(args_txt: str):
     selecteds = []
@@ -17,7 +34,7 @@ def parse_select_args(args_txt: str):
 def load_cookie(path):
     content = open(path, 'r').read()
     try:
-        return j.load(content)
+        return j.loads(content)
     except:
         return parse_cookie(content)
 

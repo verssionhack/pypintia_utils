@@ -34,10 +34,8 @@ class Pintia:
         self._profile = self.current_user()
         print(f'Load as {self._profile.user.nickname}')
 
-    def login(self, username: str, password: str):
-        pass
 
-    def __init__(self, cookie: dict | str):
+    def __init__(self, cookie: dict | str | None = None):
         self.url = f'https://pintia.cn'
         self.session = r.session()
         self.session.headers['user-agent'] = USER_AGENT
@@ -46,7 +44,8 @@ class Pintia:
 
 
         self._profile = None
-        self.load_cookie(cookie)
+        if cookie != None:
+            self.load_cookie(cookie)
 
     def update_last_request_time(self):
         now = time.time()
@@ -173,5 +172,23 @@ class Pintia:
     def problem_types(self, problem_sets_id: str):
         uri = f'/api/problem-sets/{problem_sets_id}/problem-types'
         return ProblemTypes(self._get(uri))
+
+    def login(self, phone: str, password: str):
+        uri = '/api/users/sessions'
+        payload = {
+                'phone': phone,
+                'password': password,
+                'rememberMe': False,
+                }
+
+        ret = self.session.post('https://passport.pintia.cn' + uri, json=payload)
+
+        if ret.status_code != 200:
+            print(f'status={ret.status_code} uri={uri}')
+            print(f'response={ret.text}')
+            input()
+
+        self._profile = self.current_user()
+        print(f'Load as {self._profile.user.nickname}')
     
 
