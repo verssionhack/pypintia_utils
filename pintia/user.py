@@ -58,6 +58,7 @@ class User:
 
     def __init__(self, data: dict):
 
+
         self.id = data.get('id')
         self.email = data.get('email')
         self.nickname = data.get('nickname')

@@ -143,7 +143,10 @@ class Permission:
 
 
 
-    def __init__(self, data: dict):
+    def __init__(self, data: dict | None):
+
+        if data == None:
+            return None
 
         self.permission = data.get('permission')
 

@@ -1,0 +1,77 @@
+{
+    "user": {
+        "id": "1762027932215537664",
+        "email": "",
+        "nickname": "姚嘉程",
+        "fake": false,
+        "roles": [
+            "USER"
+        ],
+        "organizationId": "0",
+        "isOrganizationAdmin": false,
+        "organizationSubdomain": "",
+        "detail": {
+            "gender": "FEMALE",
+            "phone": "",
+            "mfa": [],
+            "zipCode": "",
+            "studentId": "",
+            "graduated": false,
+            "firstName": "",
+            "lastName": "",
+            "schools": [],
+            "experiences": [],
+            "image": "4e70e87d-e061-4a73-b137-c11c856b334e.png",
+            "intention": "",
+            "skill": "",
+            "location": []
+        },
+        "info": "",
+        "activate": true,
+        "phone": "+8615058422615",
+        "realName": "",
+        "banned": false,
+        "deregistered": false
+    },
+    "emailLogin": false,
+    "omsLogin": false,
+    "studentUserLogin": false,
+    "studentUser": {
+        "id": "0",
+        "studentNumber": "",
+        "name": "",
+        "userId": "0",
+        "image": ""
+    },
+    "wechatUser": {
+        "unionId": "",
+        "nickname": "",
+        "gender": 0,
+        "city": "",
+        "province": "",
+        "country": "",
+        "image": "",
+        "openId": ""
+    },
+    "phoneLogin": true,
+    "courseGroupId": "0",
+    "organization": {
+        "id": "0",
+        "name": "",
+        "comment": "",
+        "code": "",
+        "country": "NO_COUNTRY",
+        "type": "UNKNOWN",
+        "subdomain": "",
+        "logo": "",
+        "vipType": "UNKNOWN"
+    },
+    "courseGroup": {
+        "id": "0",
+        "name": "",
+        "internalUserId": "0",
+        "ownerId": "0",
+        "organizationId": "0"
+    },
+    "courseGroupPermission": "NO_PERMISSION"
+}

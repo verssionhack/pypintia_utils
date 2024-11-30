@@ -18,7 +18,7 @@ def main():
 
     api = Pintia(load_cookie(sys.argv[1]))
     
-    problem_sets = api.problem_sets(10).problem_sets
+    problem_sets = api.problem_sets(10, filter='%7B%22endAtAfter%22%3A%222024-10-12T16%3A00%3A00.000Z%22%7D').problem_sets
     for i in range(len(problem_sets)):
         p = problem_sets[i]
         print(f'[{i}] name={p.name} id={p.id} status={p.status}')
@@ -31,6 +31,7 @@ def main():
         exam_status = api.problem_sets_status(p.id)
         for problem in exam_status.problem_status:
             if problem.problem_submission_status == ProblemSubmissionStatus.PROBLEM_ACCEPTED.value:
+                exam_problems = api.problem_sets_exam_problem(p.id, problem.id)
                 if problem.problem_type == ProblemType.CODE_COMPLETION.value:
                     last_submission = api.problem_sets_exam_problem_last_submissions(p.id, problem.id)
                     export[p.id][problem.id] = {
@@ -38,6 +39,7 @@ def main():
                             'compiler': last_submission.submission.compiler,
                             'program_content': format_c_code(last_submission.submission.submission_details[-1].code_completion_submission_detail.program),
                             'problem_type': last_submission.submission.problem_type,
+                            'title': exam_problems.problem_set_problem.title
                             }
                     #print(api.problem_sets_exam_problem_last_submissions(p.id, problem.id).submission.submission_details[-1].code_completion_submission_detail.program)
                 if problem.problem_type == ProblemType.PROGRAMMING.value:
@@ -47,9 +49,10 @@ def main():
                             'compiler': last_submission.submission.compiler,
                             'program_content': format_c_code(last_submission.submission.submission_details[-1].programming_submission_detail.program),
                             'problem_type': last_submission.submission.problem_type,
+                            'title': exam_problems.problem_set_problem.title
                             }
                     #print(api.problem_sets_exam_problem_last_submissions(p.id, problem.id).submission.submission_details[-1].programming_submission_detail.program)
-    export_s = j.dumps(export)
+    export_s = j.dumps(export, ensure_ascii=False)
 
     try:
         open(sys.argv[2], 'w').write(export_s)

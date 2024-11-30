@@ -1,0 +1,130 @@
+{
+    "submission": {
+        "id": "1862704200498520064",
+        "userId": "1762027932215537664",
+        "problemType": "PROGRAMMING",
+        "problemSetProblemId": "1862140591449247807",
+        "submitAt": "2024-11-30T03:44:23Z",
+        "status": "ACCEPTED",
+        "score": 10.0,
+        "compiler": "GCC",
+        "time": 0.002,
+        "memory": 372736,
+        "submissionDetails": [
+            {
+                "problemSetProblemId": "1862140591449247807",
+                "programmingSubmissionDetail": {
+                    "compiler": "GCC",
+                    "program": "#include    \u003cstdio.h\u003e\n\n\nvoid my_scanf(int *a, int *b) {\n    int c;\n    while ((c \u003d getc(stdin)) \u003d\u003d \u0027 \u0027 || c \u003d\u003d \u0027\\n\u0027);\n    *a \u003d c;\n    while ((c \u003d getc(stdin)) \u003d\u003d \u0027 \u0027 || c \u003d\u003d \u0027\\n\u0027);\n    *b \u003d c;\n}\n\n\nvoid do_print_leaf(int A[][3], int bi) {\n    int q[200], q_len \u003d 0;\n    int l \u003d 0, r \u003d 0, i;\n\n    q[r++] \u003d bi;\n\n    while (l !\u003d r \u0026\u0026 q[l] !\u003d -1) {\n        q[r] \u003d -1;\n        i \u003d q[l++];\n        if (A[i][0] \u003d\u003d -1 \u0026\u0026 A[i][1] \u003d\u003d -1)\n            printf(\"%d%s\", i, q[l] \u003d\u003d -1 ? \"\" : \" \");\n        if (A[i][0] !\u003d -1)\n            q[r++] \u003d A[i][0];\n        if (A[i][1] !\u003d -1)\n            q[r++] \u003d A[i][1];\n    }\n}\n\n\nint A[10][3];\n\nint main() {\n    int n;\n    scanf(\"%d\", \u0026n);\n\n    for (int i \u003d 0; i \u003c n; ++i) {\n        A[i][2] \u003d -1;\n    }\n\n    for (int i \u003d 0; i \u003c n; ++i) {\n        my_scanf(\u0026A[i][0], \u0026A[i][1]);\n        A[i][0] \u003d A[i][0] !\u003d \u0027-\u0027 ? A[i][0] - \u00270\u0027 : -1;\n        A[i][1] \u003d A[i][1] !\u003d \u0027-\u0027 ? A[i][1] - \u00270\u0027 : -1;\n        if (A[i][0] !\u003d -1) {\n            A[A[i][0]][2] \u003d i;\n        }\n        if (A[i][1] !\u003d -1) {\n            A[A[i][1]][2] \u003d i;\n        }\n    }\n\n    int root_i;\n\n    for (int i \u003d 0; i \u003c n; ++i) {\n        if (A[i][2] \u003d\u003d -1)\n            root_i \u003d i;\n    }\n\n    do_print_leaf(A, root_i);\n\n\n\n    return 0;\n}"
+                },
+                "problemId": "0"
+            }
+        ],
+        "judgeResponseContents": [
+            {
+                "status": "ACCEPTED",
+                "score": 10.0,
+                "programmingJudgeResponseContent": {
+                    "compilationResult": {
+                        "log": "a.c: In function ‘do_print_leaf’:\na.c:14:17: warning: unused variable ‘q_len’ [-Wunused-variable]\n   14 |     int q[200], q_len \u003d 0;\n      |                 ^~~~~\na.c: In function ‘main’:\na.c:36:5: warning: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Wunused-result]\n   36 |     scanf(\"%d\", \u0026n);\n      |     ^~~~~~~~~~~~~~~\na.c:61:5: warning: ‘root_i’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n   61 |     do_print_leaf(A, root_i);\n      |     ^~~~~~~~~~~~~~~~~~~~~~~~",
+                        "success": true,
+                        "error": ""
+                    },
+                    "checkerCompilationResult": {
+                        "log": "",
+                        "success": false,
+                        "error": ""
+                    },
+                    "testcaseJudgeResults": {
+                        "0": {
+                            "result": "ACCEPTED",
+                            "exceed": "UNKNOWN_TESTCASE_EXCEED",
+                            "time": 0.001,
+                            "memory": 188416,
+                            "exitcode": 0,
+                            "termsig": 0,
+                            "error": "",
+                            "stdout": "",
+                            "stderr": "",
+                            "checkerOutput": "",
+                            "testcaseScore": 2,
+                            "stdoutTruncated": false,
+                            "stderrTruncated": false,
+                            "showOutput": false
+                        },
+                        "1": {
+                            "result": "ACCEPTED",
+                            "exceed": "UNKNOWN_TESTCASE_EXCEED",
+                            "time": 0.002,
+                            "memory": 364544,
+                            "exitcode": 0,
+                            "termsig": 0,
+                            "error": "",
+                            "stdout": "",
+                            "stderr": "",
+                            "checkerOutput": "",
+                            "testcaseScore": 2,
+                            "stdoutTruncated": false,
+                            "stderrTruncated": false,
+                            "showOutput": false
+                        },
+                        "2": {
+                            "result": "ACCEPTED",
+                            "exceed": "UNKNOWN_TESTCASE_EXCEED",
+                            "time": 0.001,
+                            "memory": 184320,
+                            "exitcode": 0,
+                            "termsig": 0,
+                            "error": "",
+                            "stdout": "",
+                            "stderr": "",
+                            "checkerOutput": "",
+                            "testcaseScore": 2,
+                            "stdoutTruncated": false,
+                            "stderrTruncated": false,
+                            "showOutput": false
+                        },
+                        "3": {
+                            "result": "ACCEPTED",
+                            "exceed": "UNKNOWN_TESTCASE_EXCEED",
+                            "time": 0.002,
+                            "memory": 372736,
+                            "exitcode": 0,
+                            "termsig": 0,
+                            "error": "",
+                            "stdout": "",
+                            "stderr": "",
+                            "checkerOutput": "",
+                            "testcaseScore": 3,
+                            "stdoutTruncated": false,
+                            "stderrTruncated": false,
+                            "showOutput": false
+                        },
+                        "4": {
+                            "result": "ACCEPTED",
+                            "exceed": "UNKNOWN_TESTCASE_EXCEED",
+                            "time": 0.001,
+                            "memory": 188416,
+                            "exitcode": 0,
+                            "termsig": 0,
+                            "error": "",
+                            "stdout": "",
+                            "stderr": "",
+                            "checkerOutput": "",
+                            "testcaseScore": 1,
+                            "stdoutTruncated": false,
+                            "stderrTruncated": false,
+                            "showOutput": false
+                        }
+                    }
+                },
+                "problemSetProblemId": "1862140591449247807"
+            }
+        ],
+        "hints": {},
+        "problemSetId": "1862140487967379456",
+        "previewSubmission": false,
+        "cause": "",
+        "judgeAt": "2024-11-30T03:44:23Z"
+    }
+}

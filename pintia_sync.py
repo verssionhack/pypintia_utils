@@ -9,7 +9,7 @@ from pintia import Pintia, ProblemSubmissionStatus, ProblemType
 import json as j
 from pintia.problem_sets import ProblemSetsItem
 from pintia.problem_status import ProblemStatus
-from utils import load_cookie, parse_select_args, random_chars
+from utils import load_cookie, parse_select_args, random_chars, format_c_code
 
 class Syncer:
     loaded_cookies = set()
@@ -73,7 +73,7 @@ class Syncer:
                 problem_set_id = problem_set['problem_sets_id']
 
 
-                if problem_set['status'] != 'PROCESSING':
+                if problem_set['status'] not in ['PROCESSING', 'PENDING']:
                     api.problem_sets_exams_start(problem_set_id)
 
                 #if problem_set_id in handle['problem_sets'] and handle['problem_sets'][problem_set_id].get('status') == None:
@@ -90,14 +90,14 @@ class Syncer:
                             self.exams_problems[problem_set_id][problem.id] = {
                                     'problem_set_problem_id': problem.id,
                                     'compiler': last_submission.submission.compiler,
-                                    'program_content': last_submission.submission.submission_details[-1].code_completion_submission_detail.program,
+                                    'program_content': format_c_code(last_submission.submission.submission_details[-1].code_completion_submission_detail.program),
                                     'problem_type': last_submission.submission.problem_type,
                                     }
                         if problem.problem_type == ProblemType.PROGRAMMING.value:
                             self.exams_problems[problem_set_id][problem.id] = {
                                     'problem_set_problem_id': problem.id,
                                     'compiler': last_submission.submission.compiler,
-                                    'program_content': last_submission.submission.submission_details[-1].programming_submission_detail.program,
+                                    'program_content': format_c_code(last_submission.submission.submission_details[-1].programming_submission_detail.program),
                                     'problem_type': last_submission.submission.problem_type,
                                     }
 

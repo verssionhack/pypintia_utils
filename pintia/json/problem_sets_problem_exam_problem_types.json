@@ -1,0 +1,109 @@
+{
+    "labels": [
+        {
+            "id": "1862140591449247801",
+            "label": "6-1",
+            "score": 10,
+            "problemPoolIndex": 1,
+            "problemPoolCompositionCount": 1,
+            "title": "求二叉树高度",
+            "type": "CODE_COMPLETION",
+            "indexInProblemPool": 1
+        },
+        {
+            "id": "1862140591449247802",
+            "label": "6-2",
+            "score": 10,
+            "problemPoolIndex": 2,
+            "problemPoolCompositionCount": 1,
+            "title": "先序输出叶结点",
+            "type": "CODE_COMPLETION",
+            "indexInProblemPool": 1
+        },
+        {
+            "id": "1862140591449247803",
+            "label": "6-3",
+            "score": 10,
+            "problemPoolIndex": 3,
+            "problemPoolCompositionCount": 1,
+            "title": "二叉树的遍历",
+            "type": "CODE_COMPLETION",
+            "indexInProblemPool": 1
+        },
+        {
+            "id": "1862140591449247804",
+            "label": "6-4",
+            "score": 10,
+            "problemPoolIndex": 4,
+            "problemPoolCompositionCount": 1,
+            "title": "统计二叉树结点个数",
+            "type": "CODE_COMPLETION",
+            "indexInProblemPool": 1
+        },
+        {
+            "id": "1862140591449247805",
+            "label": "6-5",
+            "score": 10,
+            "problemPoolIndex": 5,
+            "problemPoolCompositionCount": 1,
+            "title": "统计二叉树度为1的结点个数",
+            "type": "CODE_COMPLETION",
+            "indexInProblemPool": 1
+        },
+        {
+            "id": "1862140591449247806",
+            "label": "",
+            "score": 10,
+            "problemPoolIndex": 6,
+            "problemPoolCompositionCount": 1,
+            "title": "统计二叉树叶子结点个数",
+            "type": "CODE_COMPLETION",
+            "indexInProblemPool": 1
+        },
+        {
+            "id": "1862140591449247807",
+            "label": "7-1",
+            "score": 10,
+            "problemPoolIndex": 1,
+            "problemPoolCompositionCount": 1,
+            "title": "列出叶结点",
+            "type": "PROGRAMMING",
+            "indexInProblemPool": 1
+        },
+        {
+            "id": "1862140591449247808",
+            "label": "7-2",
+            "score": 10,
+            "problemPoolIndex": 2,
+            "problemPoolCompositionCount": 1,
+            "title": "还原二叉树",
+            "type": "PROGRAMMING",
+            "indexInProblemPool": 1
+        },
+        {
+            "id": "1862140591449247809",
+            "label": "",
+            "score": 25,
+            "problemPoolIndex": 3,
+            "problemPoolCompositionCount": 1,
+            "title": "玩转二叉树",
+            "type": "PROGRAMMING",
+            "indexInProblemPool": 1
+        }
+    ],
+    "problemTypes": [
+        "TRUE_OR_FALSE",
+        "MULTIPLE_CHOICE"
+    ],
+    "examLabelByProblemSetProblemId": {
+        "1862140591449247801": "6-1",
+        "1862140591449247802": "6-2",
+        "1862140591449247803": "6-3",
+        "1862140591449247804": "6-4",
+        "1862140591449247805": "6-5",
+        "1862140591449247806": "",
+        "1862140591449247807": "7-1",
+        "1862140591449247808": "7-2",
+        "1862140591449247809": ""
+    }
+}

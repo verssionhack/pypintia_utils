@@ -1,0 +1,1390 @@
+{
+    "total": 45,
+    "commonRankings": {
+        "labels": [
+            "6-1",
+            "6-2",
+            "6-3",
+            "6-4",
+            "6-5",
+            "",
+            "7-1",
+            "7-2",
+            ""
+        ],
+        "commonRankings": [
+            {
+                "rank": 1,
+                "user": {
+                    "user": {
+                        "id": "1762027932215537664",
+                        "nickname": "姚嘉程"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023013121",
+                        "name": "姚嘉程",
+                        "id": "1761754860845654020"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862425241119625216",
+                "totalScore": 105.0,
+                "typeScores": {
+                    "CODE_COMPLETION": 60.0,
+                    "PROGRAMMING": 45.0
+                },
+                "solvingTime": 1642,
+                "problemScoreByProblemSetProblemId": {
+                    "1862140591449247801": {
+                        "score": 10.0,
+                        "validSubmitCount": 2,
+                        "acceptTime": 478,
+                        "submitCountSnapshot": 2
+                    },
+                    "1862140591449247802": {
+                        "score": 10.0,
+                        "validSubmitCount": 2,
+                        "acceptTime": 482,
+                        "submitCountSnapshot": 2
+                    },
+                    "1862140591449247803": {
+                        "score": 10.0,
+                        "validSubmitCount": 8,
+                        "acceptTime": 862,
+                        "submitCountSnapshot": 8
+                    },
+                    "1862140591449247804": {
+                        "score": 10.0,
+                        "validSubmitCount": 3,
+                        "acceptTime": 865,
+                        "submitCountSnapshot": 3
+                    },
+                    "1862140591449247805": {
+                        "score": 10.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 868,
+                        "submitCountSnapshot": 1
+                    },
+                    "1862140591449247806": {
+                        "score": 10.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 869,
+                        "submitCountSnapshot": 1
+                    },
+                    "1862140591449247807": {
+                        "score": 10.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 1581,
+                        "submitCountSnapshot": 1
+                    },
+                    "1862140591449247808": {
+                        "score": 10.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 1616,
+                        "submitCountSnapshot": 1
+                    },
+                    "1862140591449247809": {
+                        "score": 25.0,
+                        "validSubmitCount": 6,
+                        "acceptTime": 1642,
+                        "submitCountSnapshot": 6
+                    }
+                },
+                "startAt": "2024-11-29T09:15:54Z"
+            },
+            {
+                "rank": 2,
+                "user": {
+                    "user": {
+                        "id": "1722449971651616768",
+                        "nickname": "cai yu chen"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014279",
+                        "name": "蔡钰晨",
+                        "id": "1721337614737055767"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306375205888000",
+                "totalScore": 63.0,
+                "typeScores": {
+                    "CODE_COMPLETION": 60.0,
+                    "PROGRAMMING": 3.0
+                },
+                "solvingTime": 564,
+                "problemScoreByProblemSetProblemId": {
+                    "1862140591449247801": {
+                        "score": 10.0,
+                        "validSubmitCount": 3,
+                        "acceptTime": 7,
+                        "submitCountSnapshot": 3
+                    },
+                    "1862140591449247802": {
+                        "score": 10.0,
+                        "validSubmitCount": 3,
+                        "acceptTime": 12,
+                        "submitCountSnapshot": 3
+                    },
+                    "1862140591449247803": {
+                        "score": 10.0,
+                        "validSubmitCount": 8,
+                        "acceptTime": 77,
+                        "submitCountSnapshot": 8
+                    },
+                    "1862140591449247804": {
+                        "score": 10.0,
+                        "validSubmitCount": 2,
+                        "acceptTime": 97,
+                        "submitCountSnapshot": 2
+                    },
+                    "1862140591449247805": {
+                        "score": 10.0,
+                        "validSubmitCount": 5,
+                        "acceptTime": 119,
+                        "submitCountSnapshot": 5
+                    },
+                    "1862140591449247806": {
+                        "score": 10.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 121,
+                        "submitCountSnapshot": 1
+                    },
+                    "1862140591449247807": {
+                        "score": 3.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 564,
+                        "submitCountSnapshot": 1
+                    }
+                },
+                "startAt": "2024-11-29T01:23:34Z"
+            },
+            {
+                "rank": 3,
+                "user": {
+                    "user": {
+                        "id": "1722449359505526784",
+                        "nickname": "YH"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014295",
+                        "name": "沈永昊",
+                        "id": "1721337614737055782"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306303227437056",
+                "totalScore": 60.0,
+                "typeScores": {
+                    "CODE_COMPLETION": 60.0
+                },
+                "solvingTime": 85,
+                "problemScoreByProblemSetProblemId": {
+                    "1862140591449247801": {
+                        "score": 10.0,
+                        "validSubmitCount": 4,
+                        "acceptTime": 8,
+                        "submitCountSnapshot": 4
+                    },
+                    "1862140591449247802": {
+                        "score": 10.0,
+                        "validSubmitCount": 4,
+                        "acceptTime": 37,
+                        "submitCountSnapshot": 4
+                    },
+                    "1862140591449247803": {
+                        "score": 10.0,
+                        "validSubmitCount": 3,
+                        "acceptTime": 69,
+                        "submitCountSnapshot": 3
+                    },
+                    "1862140591449247804": {
+                        "score": 10.0,
+                        "validSubmitCount": 2,
+                        "acceptTime": 74,
+                        "submitCountSnapshot": 2
+                    },
+                    "1862140591449247805": {
+                        "score": 10.0,
+                        "validSubmitCount": 4,
+                        "acceptTime": 82,
+                        "submitCountSnapshot": 4
+                    },
+                    "1862140591449247806": {
+                        "score": 10.0,
+                        "validSubmitCount": 4,
+                        "acceptTime": 85,
+                        "submitCountSnapshot": 4
+                    }
+                },
+                "startAt": "2024-11-29T01:23:17Z"
+            },
+            {
+                "rank": 3,
+                "user": {
+                    "user": {
+                        "id": "1761998123263451136",
+                        "nickname": "Cherry"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023013768",
+                        "name": "周陈睿",
+                        "id": "1761671650426085378"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862417194976546816",
+                "totalScore": 60.0,
+                "typeScores": {
+                    "CODE_COMPLETION": 60.0
+                },
+                "solvingTime": 513,
+                "problemScoreByProblemSetProblemId": {
+                    "1862140591449247801": {
+                        "score": 10.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 445,
+                        "submitCountSnapshot": 1
+                    },
+                    "1862140591449247802": {
+                        "score": 10.0,
+                        "validSubmitCount": 3,
+                        "acceptTime": 450,
+                        "submitCountSnapshot": 3
+                    },
+                    "1862140591449247804": {
+                        "score": 10.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 475,
+                        "submitCountSnapshot": 1
+                    },
+                    "1862140591449247803": {
+                        "score": 10.0,
+                        "validSubmitCount": 8,
+                        "acceptTime": 513,
+                        "submitCountSnapshot": 8
+                    },
+                    "1862140591449247805": {
+                        "score": 10.0,
+                        "validSubmitCount": 3,
+                        "acceptTime": 500,
+                        "submitCountSnapshot": 3
+                    },
+                    "1862140591449247806": {
+                        "score": 10.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 497,
+                        "submitCountSnapshot": 1
+                    }
+                },
+                "startAt": "2024-11-29T08:43:55Z"
+            },
+            {
+                "rank": 3,
+                "user": {
+                    "user": {
+                        "id": "1722450766321221632",
+                        "nickname": "刘炫佚"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014291",
+                        "name": "刘炫佚",
+                        "id": "1721337614737055778"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306350527823872",
+                "totalScore": 60.0,
+                "typeScores": {
+                    "CODE_COMPLETION": 60.0,
+                    "PROGRAMMING": 0.0
+                },
+                "solvingTime": 552,
+                "problemScoreByProblemSetProblemId": {
+                    "1862140591449247801": {
+                        "score": 10.0,
+                        "validSubmitCount": 9,
+                        "acceptTime": 10,
+                        "submitCountSnapshot": 9
+                    },
+                    "1862140591449247802": {
+                        "score": 10.0,
+                        "validSubmitCount": 13,
+                        "acceptTime": 437,
+                        "submitCountSnapshot": 13
+                    },
+                    "1862140591449247803": {
+                        "score": 10.0,
+                        "validSubmitCount": 8,
+                        "acceptTime": 444,
+                        "submitCountSnapshot": 8
+                    },
+                    "1862140591449247806": {
+                        "score": 10.0,
+                        "validSubmitCount": 3,
+                        "acceptTime": 497,
+                        "submitCountSnapshot": 3
+                    },
+                    "1862140591449247804": {
+                        "score": 10.0,
+                        "validSubmitCount": 17,
+                        "acceptTime": 498,
+                        "submitCountSnapshot": 17
+                    },
+                    "1862140591449247805": {
+                        "score": 10.0,
+                        "validSubmitCount": 5,
+                        "acceptTime": 505,
+                        "submitCountSnapshot": 5
+                    },
+                    "1862140591449247807": {
+                        "score": 0.0,
+                        "validSubmitCount": 3,
+                        "acceptTime": 552,
+                        "submitCountSnapshot": 3
+                    }
+                },
+                "startAt": "2024-11-29T01:23:28Z"
+            },
+            {
+                "rank": 3,
+                "user": {
+                    "user": {
+                        "id": "1722449520734576640",
+                        "nickname": "杨希妤"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014293",
+                        "name": "杨希妤",
+                        "id": "1721337614737055780"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862328329683218432",
+                "totalScore": 60.0,
+                "typeScores": {
+                    "CODE_COMPLETION": 60.0
+                },
+                "solvingTime": 635,
+                "problemScoreByProblemSetProblemId": {
+                    "1862140591449247801": {
+                        "score": 10.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 589,
+                        "submitCountSnapshot": 1
+                    },
+                    "1862140591449247802": {
+                        "score": 10.0,
+                        "validSubmitCount": 7,
+                        "acceptTime": 630,
+                        "submitCountSnapshot": 7
+                    },
+                    "1862140591449247806": {
+                        "score": 10.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 598,
+                        "submitCountSnapshot": 1
+                    },
+                    "1862140591449247805": {
+                        "score": 10.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 602,
+                        "submitCountSnapshot": 1
+                    },
+                    "1862140591449247804": {
+                        "score": 10.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 603,
+                        "submitCountSnapshot": 1
+                    },
+                    "1862140591449247803": {
+                        "score": 10.0,
+                        "validSubmitCount": 8,
+                        "acceptTime": 635,
+                        "submitCountSnapshot": 8
+                    }
+                },
+                "startAt": "2024-11-29T02:50:48Z"
+            },
+            {
+                "rank": 7,
+                "user": {
+                    "user": {
+                        "id": "1722166619505758208",
+                        "nickname": "赵航炜"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014263",
+                        "name": "赵航炜",
+                        "id": "1721337614737055751"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862309122870489088",
+                "totalScore": 11.0,
+                "typeScores": {
+                    "CODE_COMPLETION": 11.0
+                },
+                "solvingTime": 1682,
+                "problemScoreByProblemSetProblemId": {
+                    "1862140591449247801": {
+                        "score": 10.0,
+                        "validSubmitCount": 2,
+                        "acceptTime": 1670,
+                        "submitCountSnapshot": 2
+                    },
+                    "1862140591449247802": {
+                        "score": 1.0,
+                        "validSubmitCount": 2,
+                        "acceptTime": 1682,
+                        "submitCountSnapshot": 2
+                    }
+                },
+                "startAt": "2024-11-29T01:34:29Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722448977622544384",
+                        "nickname": "cmb"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014271",
+                        "name": "陈蒙波",
+                        "id": "1721337614737055759"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306516957663232",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:24:08Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722165643185037312",
+                        "nickname": "李承翰 "
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014533",
+                        "name": "李承翰",
+                        "id": "1721337123340787755"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862336697810292736",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T03:24:03Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1721427908123926528",
+                        "nickname": "秦雪峰"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014435",
+                        "name": "秦雪峰",
+                        "id": "1721336757068992556"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862723743636787200",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-30T05:02:02Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722447494411792384",
+                        "nickname": "AACW"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014269",
+                        "name": "王皓",
+                        "id": "1721337614737055757"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306335226859520",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:23:24Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449642902073344",
+                        "nickname": "小地瓜"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014292",
+                        "name": "王逸彬",
+                        "id": "1721337614737055779"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862307219306450944",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:26:55Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449563558424576",
+                        "nickname": "王晨旭"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014268",
+                        "name": "王晨旭",
+                        "id": "1721337614737055756"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306448124940288",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:23:51Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722451000661184512",
+                        "nickname": "李家宝"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014287",
+                        "name": "李家宝",
+                        "id": "1721337614737055774"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862307203036745728",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:26:51Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449830324543488",
+                        "nickname": "吴书捷"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014274",
+                        "name": "吴书捷",
+                        "id": "1721337614737055762"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862307510802190336",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:28:05Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449407442231296",
+                        "nickname": "陈浩田"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014266",
+                        "name": "陈浩田",
+                        "id": "1721337614737055754"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306661912948736",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:24:42Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449377742360576",
+                        "nickname": "孙露嘉"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014258",
+                        "name": "孙露嘉",
+                        "id": "1721337614737055747"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306365878972416",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:23:32Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722133457912266752",
+                        "nickname": "盛心怡"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014282",
+                        "name": "盛心怡",
+                        "id": "1721337614737055769"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306371537088512",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:23:33Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1721419911691735040",
+                        "nickname": "mmm"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014402",
+                        "name": "林淼",
+                        "id": "1721336757068992524"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862702098985660416",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-30T03:36:02Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449156958388224",
+                        "nickname": "伍友乐"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014257",
+                        "name": "伍友乐",
+                        "id": "1721337614737055746"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306421566746624",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:23:45Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1625105006204641280",
+                        "nickname": "无限与无"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2022014967",
+                        "name": "梁乔阿橙",
+                        "id": "1604339765917691939"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306291111309312",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:23:14Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722450489094512640",
+                        "nickname": "Bai"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014272",
+                        "name": "白子墨",
+                        "id": "1721337614737055760"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306775473729536",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:25:09Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1721422146492407808",
+                        "nickname": "22"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014391",
+                        "name": "关博文",
+                        "id": "1721336757068992514"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862446371272536064",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T10:39:52Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1764273881105293312",
+                        "nickname": "魏迪"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023013756",
+                        "name": "魏迪",
+                        "id": "1761671650426085377"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862336351977484288",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T03:22:41Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722447661370249216",
+                        "nickname": "唐睿涵"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014267",
+                        "name": "唐睿涵",
+                        "id": "1721337614737055755"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306425501003776",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:23:46Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449488711057408",
+                        "nickname": "章子俊"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014281",
+                        "name": "章子俊",
+                        "id": "1721337614737055768"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306704925536256",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:24:53Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449412949352448",
+                        "nickname": "沈劭言"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014289",
+                        "name": "沈劭言",
+                        "id": "1721337614737055776"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862307332242419712",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:27:22Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449347870535680",
+                        "nickname": "吕骏晟"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014264",
+                        "name": "吕骏晟",
+                        "id": "1721337614737055752"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306319808741376",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:23:21Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1721412209112485888",
+                        "nickname": "高胜乐"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014596",
+                        "name": "高胜乐",
+                        "id": "1721412421927280648"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862336617095249920",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T03:23:44Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722136315848110080",
+                        "nickname": "王宇"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014452",
+                        "name": "王宇",
+                        "id": "1721336968281563150"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862336494000816128",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T03:23:15Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449020656091136",
+                        "nickname": "wyj"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014288",
+                        "name": "汪洋杰",
+                        "id": "1721337614737055775"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306378814210048",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:23:35Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449764171972608",
+                        "nickname": "陈佳璇"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014254",
+                        "name": "陈佳璇",
+                        "id": "1721337614737055744"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306815479005184",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:25:19Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449453063675904",
+                        "nickname": "One Star"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014276",
+                        "name": "陈奕鑫",
+                        "id": "1721337614737055764"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306345033285632",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:23:27Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722450667641835520",
+                        "nickname": "陈若茜"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014283",
+                        "name": "陈若茜",
+                        "id": "1721337614737055770"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306453485404160",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:23:53Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1721422207955738624",
+                        "nickname": "李佳怡"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014424",
+                        "name": "李佳怡",
+                        "id": "1721336757068992546"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862336742316195840",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T03:24:14Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449919818412032",
+                        "nickname": "余文俊"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014270",
+                        "name": "余文俊",
+                        "id": "1721337614737055758"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306364582936576",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:23:31Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722406946590232576",
+                        "nickname": "acdes"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014579",
+                        "name": "李约书亚",
+                        "id": "1721337425578127397"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862336296210022400",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T03:22:28Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449653161328640",
+                        "nickname": "phy"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014275",
+                        "name": "裴浩宇",
+                        "id": "1721337614737055763"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306965449318400",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:25:55Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449439113416704",
+                        "nickname": "李星锐"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014294",
+                        "name": "李星锐",
+                        "id": "1721337614737055781"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862308954556047360",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:33:49Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722165503665704960",
+                        "nickname": "林国健"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014513",
+                        "name": "林国健",
+                        "id": "1721337123340787737"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862336361027575808",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T03:22:43Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1721420081863028736",
+                        "nickname": "潘雨洁"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014426",
+                        "name": "潘雨洁",
+                        "id": "1721336757068992548"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862336323312394240",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T03:22:34Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1721361989074911232",
+                        "nickname": "包宇轩"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014357",
+                        "name": "包宇轩",
+                        "id": "1721336521336524819"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862336373262360576",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T03:22:46Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722165358383398912",
+                        "nickname": "刘强"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014509",
+                        "name": "刘强",
+                        "id": "1721337123340787733"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862336560093437952",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T03:23:31Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449365209788416",
+                        "nickname": "侯俊杰"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014265",
+                        "name": "侯俊杰",
+                        "id": "1721337614737055753"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306684640665600",
+                "totalScore": 0.0,
+                "typeScores": {},
+                "solvingTime": 0,
+                "problemScoreByProblemSetProblemId": {},
+                "startAt": "2024-11-29T01:24:48Z"
+            },
+            {
+                "rank": 8,
+                "user": {
+                    "user": {
+                        "id": "1722449173446201344",
+                        "nickname": "陈志高"
+                    },
+                    "studentUser": {
+                        "studentNumber": "2023014296",
+                        "name": "陈志高",
+                        "id": "1721337614737055783"
+                    },
+                    "userGroupId": "0",
+                    "examId": "0"
+                },
+                "examId": "1862306373193838592",
+                "totalScore": 0.0,
+                "typeScores": {
+                    "CODE_COMPLETION": 0.0
+                },
+                "solvingTime": 11,
+                "problemScoreByProblemSetProblemId": {
+                    "1862140591449247801": {
+                        "score": 0.0,
+                        "validSubmitCount": 1,
+                        "acceptTime": 11,
+                        "submitCountSnapshot": 1
+                    }
+                },
+                "startAt": "2024-11-29T01:23:34Z"
+            }
+        ],
+        "selfRanking": {
+            "rank": 1,
+            "user": {
+                "user": {
+                    "id": "1762027932215537664",
+                    "nickname": "姚嘉程"
+                },
+                "studentUser": {
+                    "studentNumber": "2023013121",
+                    "name": "姚嘉程",
+                    "id": "1761754860845654020"
+                },
+                "userGroupId": "0",
+                "examId": "0"
+            },
+            "examId": "1862425241119625216",
+            "totalScore": 105.0,
+            "typeScores": {
+                "CODE_COMPLETION": 60.0,
+                "PROGRAMMING": 45.0
+            },
+            "solvingTime": 1642,
+            "problemScoreByProblemSetProblemId": {
+                "1862140591449247801": {
+                    "score": 10.0,
+                    "validSubmitCount": 2,
+                    "acceptTime": 478,
+                    "submitCountSnapshot": 2
+                },
+                "1862140591449247802": {
+                    "score": 10.0,
+                    "validSubmitCount": 2,
+                    "acceptTime": 482,
+                    "submitCountSnapshot": 2
+                },
+                "1862140591449247803": {
+                    "score": 10.0,
+                    "validSubmitCount": 8,
+                    "acceptTime": 862,
+                    "submitCountSnapshot": 8
+                },
+                "1862140591449247804": {
+                    "score": 10.0,
+                    "validSubmitCount": 3,
+                    "acceptTime": 865,
+                    "submitCountSnapshot": 3
+                },
+                "1862140591449247805": {
+                    "score": 10.0,
+                    "validSubmitCount": 1,
+                    "acceptTime": 868,
+                    "submitCountSnapshot": 1
+                },
+                "1862140591449247806": {
+                    "score": 10.0,
+                    "validSubmitCount": 1,
+                    "acceptTime": 869,
+                    "submitCountSnapshot": 1
+                },
+                "1862140591449247807": {
+                    "score": 10.0,
+                    "validSubmitCount": 1,
+                    "acceptTime": 1581,
+                    "submitCountSnapshot": 1
+                },
+                "1862140591449247808": {
+                    "score": 10.0,
+                    "validSubmitCount": 1,
+                    "acceptTime": 1616,
+                    "submitCountSnapshot": 1
+                },
+                "1862140591449247809": {
+                    "score": 25.0,
+                    "validSubmitCount": 6,
+                    "acceptTime": 1642,
+                    "submitCountSnapshot": 6
+                }
+            },
+            "startAt": "2024-11-29T09:15:54Z"
+        },
+        "labelByProblemSetProblemId": {
+            "1862140591449247801": "6-1",
+            "1862140591449247802": "6-2",
+            "1862140591449247803": "6-3",
+            "1862140591449247804": "6-4",
+            "1862140591449247805": "6-5",
+            "1862140591449247806": "",
+            "1862140591449247807": "7-1",
+            "1862140591449247808": "7-2",
+            "1862140591449247809": ""
+        }
+    }
+}

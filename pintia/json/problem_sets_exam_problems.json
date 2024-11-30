@@ -1,0 +1,91 @@
+{
+    "problemSetProblem": {
+        "id": "1862140591449247807",
+        "label": "7-1",
+        "score": 10,
+        "problemConfig": {
+            "programmingProblemConfig": {
+                "timeLimit": 400,
+                "memoryLimit": 65536,
+                "codeSizeLimit": 16,
+                "cases": {
+                    "0": {
+                        "hint": "",
+                        "showHint": false,
+                        "score": 2,
+                        "isPublic": false
+                    },
+                    "1": {
+                        "hint": "",
+                        "showHint": false,
+                        "score": 2,
+                        "isPublic": false
+                    },
+                    "2": {
+                        "hint": "",
+                        "showHint": false,
+                        "score": 2,
+                        "isPublic": false
+                    },
+                    "3": {
+                        "hint": "",
+                        "showHint": false,
+                        "score": 3,
+                        "isPublic": false
+                    },
+                    "4": {
+                        "hint": "",
+                        "showHint": false,
+                        "score": 1,
+                        "isPublic": false
+                    }
+                },
+                "exampleTestDatas": [
+                    {
+                        "name": "",
+                        "input": "8\n1 -\n- -\n0 -\n2 7\n- -\n- -\n5 -\n4 6",
+                        "output": "4 1 5\n"
+                    },
+                    {
+                        "name": "",
+                        "input": "8\n1 -\n- -\n0 -\n2 7\n- -\n- -\n5 -\n4 6",
+                        "output": "4 1 5\n"
+                    }
+                ],
+                "testdataDescriptionCode": "",
+                "customizeLimits": [],
+                "stackSizeLimit": 8192,
+                "tools": [],
+                "ignorePresentationError": false,
+                "pathAsStdin": "",
+                "pathAsStdout": ""
+            },
+            "solutionVisible": false,
+            "answerVisible": false
+        },
+        "deadline": "1970-01-01T00:00:00Z",
+        "title": "列出叶结点",
+        "content": "对于给定的二叉树，本题要求你按从上到下、从左到右的顺序输出其所有叶结点。\n\n### 输入格式：\n\n首先第一行给出一个正整数 $$n$$（$$\\le 10$$），为树中结点总数。树中的结点从 0 到 $$n-1$$ 编号。随后 $$n$$ 行，每行给出一个对应结点左右孩子的编号。如果某个孩子不存在，则在对应位置给出 \"-\"。编号间以 1 个空格分隔。\n\n### 输出格式：\n\n在一行中按规定顺序输出叶结点的编号。编号间以 1 个空格分隔，行首尾不得有多余空格。\n\n### 输入样例：\n```in\n8\n1 -\n- -\n0 -\n2 7\n- -\n- -\n5 -\n4 6\n```\n\n### 输出样例：\n```out\n4 1 5\n```\n",
+        "type": "PROGRAMMING",
+        "author": "陈越",
+        "difficulty": 0,
+        "compiler": "NO_COMPILER",
+        "problemStatus": "REVIEWED",
+        "lastSubmissionId": "0",
+        "solution": "",
+        "problemSetId": "1862140487967379456",
+        "problemId": "967238547983077376",
+        "description": "对于给定的二叉树，本题要求你按从上到下、从左到右的顺序输出其所有叶结点。\n\n### 输入格式：\n\n首先第一行给出一个正整数 $$n$$（$$\\le 10$$），为树中结点总数。树中的结点从 0 到 $$n-1$$ 编号。随后 $$n$$ 行，每行给出一个对应结点左右孩子的编号。如果某个孩子不存在，则在对应位置给出 \"-\"。编号间以 1 个空格分隔。\n\n### 输出格式：\n\n在一行中按规定顺序输出叶结点的编号。编号间以 1 个空格分隔，行首尾不得有多余空格。\n\n### 输入样例：\n```in\n8\n1 -\n- -\n0 -\n2 7\n- -\n- -\n5 -\n4 6\n```\n\n### 输出样例：\n```out\n4 1 5\n```\n",
+        "problemPoolIndex": 1,
+        "indexInProblemPool": 1,
+        "authorOrganizationId": "1"
+    },
+    "organization": {
+        "id": "1",
+        "name": "浙江大学",
+        "code": "zju",
+        "type": "SCHOOL",
+        "logo": "ffecf2a6-4935-4344-b640-35360f3c1f88.png"
+    },
+    "examLabel": "7-1"
+}

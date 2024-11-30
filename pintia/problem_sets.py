@@ -37,6 +37,9 @@ class ProblemSetConfig:
 
     def __init__(self, data: dict):
 
+        if data == None:
+            return None
+
         self.compilers = data.get('compilers')
         self.multiple_choice_more_than_one_answer_problem_scoring_method = data.get('multiple_choice_more_than_one_answer_problem_scoring_method')
         self.scoring_rule = data.get('scoring_rule')

@@ -1,0 +1,20 @@
+{
+    "summaries": {
+        "TRUE_OR_FALSE": {
+            "total": 20,
+            "totalScore": 20
+        },
+        "MULTIPLE_CHOICE": {
+            "total": 40,
+            "totalScore": 81
+        },
+        "CODE_COMPLETION": {
+            "total": 6,
+            "totalScore": 60
+        },
+        "PROGRAMMING": {
+            "total": 3,
+            "totalScore": 45
+        }
+    }
+}
