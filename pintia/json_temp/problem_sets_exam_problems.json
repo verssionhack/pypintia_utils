@@ -1,0 +1,1457 @@
+{
+    "organizationById": {
+        "1": {
+            "id": "1",
+            "name": "浙江大学",
+            "code": "zju",
+            "type": "SCHOOL",
+            "logo": "ffecf2a6-4935-4344-b640-35360f3c1f88.png"
+        },
+        "2": {
+            "id": "2",
+            "name": "浙大城市学院",
+            "code": "zucc",
+            "type": "SCHOOL",
+            "logo": "a7a4740b-4fb1-4f54-b79c-6080378d7579.png"
+        },
+        "39": {
+            "id": "39",
+            "name": "中国民用航空飞行学院",
+            "code": "cafuc",
+            "type": "SCHOOL",
+            "logo": "f747e651-9362-430f-a05a-13824bf76308.png"
+        },
+        "99": {
+            "id": "99",
+            "name": "临沂大学",
+            "code": "lyu",
+            "type": "SCHOOL",
+            "logo": "4e903005-390a-48f1-a5fe-7a04350f0277.png"
+        },
+        "73": {
+            "id": "73",
+            "name": "贵州师范学院",
+            "code": "gznc",
+            "type": "SCHOOL",
+            "logo": "e194d46f-fe53-4489-9037-17517680840e.png"
+        },
+        "170": {
+            "id": "170",
+            "name": "绍兴文理学院",
+            "code": "usx",
+            "type": "SCHOOL",
+            "logo": "school-icons-manual/2/usx.png"
+        },
+        "35": {
+            "id": "35",
+            "name": "西南石油大学",
+            "code": "swpu",
+            "type": "SCHOOL",
+            "logo": "a854c096-1771-4878-abfd-57902797f1d8.png"
+        }
+    },
+    "problemSetProblems": [
+        {
+            "id": "1854547412456108047",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "1",
+                        "3",
+                        "5",
+                        "1或者5"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "设一个堆栈的入栈顺序是1、2、3、4、5。若第一个出栈的元素是4，则最后一个出栈的元素必定是：",
+            "content": "设一个堆栈的入栈顺序是1、2、3、4、5。若第一个出栈的元素是4，则最后一个出栈的元素必定是： @[](2)\n\nA. 1\nB. 3\nC. 5\nD. 1或者5",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "132",
+            "description": "设一个堆栈的入栈顺序是1、2、3、4、5。若第一个出栈的元素是4，则最后一个出栈的元素必定是：",
+            "problemPoolIndex": 1,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108048",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "`a b c + * d -`",
+                        "`a b c d * + -`",
+                        "`a b c * + d -`",
+                        "`- + * a b c d`"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "表达式`a*(b+c)-d`的后缀表达式是：",
+            "content": "表达式`a*(b+c)-d`的后缀表达式是： @[](2)\n\nA. `a b c + * d -`\nB. `a b c d * + -`\nC. `a b c * + d -`\nD. `- + * a b c d`",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "133",
+            "description": "表达式`a*(b+c)-d`的后缀表达式是：",
+            "problemPoolIndex": 2,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108049",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "线性表用指针，堆栈和队列用数组",
+                        "堆栈和队列都是插入、删除受到约束的线性表",
+                        "线性表和队列都可以用循环链表实现，但堆栈不能",
+                        "堆栈和队列都不是线性结构，而线性表是"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "线性表、堆栈、队列的主要区别是什么？",
+            "content": "线性表、堆栈、队列的主要区别是什么？@[](1)\n\nA. 线性表用指针，堆栈和队列用数组\nB. 堆栈和队列都是插入、删除受到约束的线性表\nC. 线性表和队列都可以用循环链表实现，但堆栈不能\nD. 堆栈和队列都不是线性结构，而线性表是",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "1312",
+            "description": "线性表、堆栈、队列的主要区别是什么？",
+            "problemPoolIndex": 3,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108050",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "`S-\u003etop \u003d\u003d 0`",
+                        "`S-\u003etop \u003d\u003d -1`",
+                        "`S-\u003etop !\u003d m-1`",
+                        "`S-\u003etop \u003d\u003d m-1`"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "若`top`为指向栈顶元素的指针，判定栈`S`（最多容纳`m`个元素）为空的条件是：",
+            "content": "若`top`为指向栈顶元素的指针，判定栈`S`（最多容纳`m`个元素）为空的条件是： @[](2)\n\nA. `S-\u003etop \u003d\u003d 0`\nB. `S-\u003etop \u003d\u003d -1`\nC. `S-\u003etop !\u003d m-1`\nD. `S-\u003etop \u003d\u003d m-1`",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "135",
+            "description": "若`top`为指向栈顶元素的指针，判定栈`S`（最多容纳`m`个元素）为空的条件是：",
+            "problemPoolIndex": 4,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108051",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "`front+size`",
+                        "`front+size-1`",
+                        "`(front+size)%m`",
+                        "`(front+size-1)%m`"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "如果循环队列用大小为`m`的数组表示，队头位置为`front`、队列元素个数为`size`，那么队尾元素位置`rear`为：",
+            "content": "如果循环队列用大小为`m`的数组表示，队头位置为`front`、队列元素个数为`size`，那么队尾元素位置`rear`为： @[](2)\n\nA. `front+size`\nB. `front+size-1`\nC. `(front+size)%m`\nD. `(front+size-1)%m`",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "144",
+            "description": "如果循环队列用大小为`m`的数组表示，队头位置为`front`、队列元素个数为`size`，那么队尾元素位置`rear`为：",
+            "problemPoolIndex": 5,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108052",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "2",
+                        "3",
+                        "4",
+                        "5"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "假设有5个整数以1、2、3、4、5的顺序被压入堆栈，且出栈顺序为3、5、4、2、1，那么为了获得这样的输出，堆栈大小至少为：",
+            "content": "假设有5个整数以1、2、3、4、5的顺序被压入堆栈，且出栈顺序为3、5、4、2、1，那么为了获得这样的输出，堆栈大小至少为： @[](2)\n\nA. 2\nB. 3\nC. 4\nD. 5",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "121",
+            "description": "假设有5个整数以1、2、3、4、5的顺序被压入堆栈，且出栈顺序为3、5、4、2、1，那么为了获得这样的输出，堆栈大小至少为：",
+            "problemPoolIndex": 6,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108053",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "`1-\u003e2-\u003e3`",
+                        "`2-\u003e3-\u003e4`",
+                        "`4-\u003e1-\u003e2`",
+                        "答案不唯一"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "若已知一队列用单向链表表示，该单向链表的当前状态（含3个对象）是：`1-\u003e2-\u003e3`，其中`x-\u003ey`表示`x`的下一节点是`y",
+            "content": "若已知一队列用单向链表表示，该单向链表的当前状态（含3个对象）是：`1-\u003e2-\u003e3`，其中`x-\u003ey`表示`x`的下一节点是`y`。此时，如果将对象`4`入队，然后队列头的对象出队，则单向链表的状态是： @[](1)\n\nA. `1-\u003e2-\u003e3`\nB. `2-\u003e3-\u003e4`\nC. `4-\u003e1-\u003e2`\nD. 答案不唯一",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "140",
+            "description": "若已知一队列用单向链表表示，该单向链表的当前状态（含3个对象）是：`1-\u003e2-\u003e3`，其中`x-\u003ey`表示`x`的下一节点是`y`。此时，如果将对象`4`入队，然后队列头的对象出队，则单向链表的状态是：",
+            "problemPoolIndex": 7,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108054",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "2和0",
+                        "2和2",
+                        "2和4",
+                        "2和6"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "若用大小为6的数组来实现循环队列，且当前`front`和`rear`的值分别为0和4。当从队列中删除两个元素，再加入两个元素后，",
+            "content": "若用大小为6的数组来实现循环队列，且当前`front`和`rear`的值分别为0和4。当从队列中删除两个元素，再加入两个元素后，`front`和`rear`的值分别为多少？ @[](2)\n\nA. 2和0\nB. 2和2\nC. 2和4\nD. 2和6",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "142",
+            "description": "若用大小为6的数组来实现循环队列，且当前`front`和`rear`的值分别为0和4。当从队列中删除两个元素，再加入两个元素后，`front`和`rear`的值分别为多少？",
+            "problemPoolIndex": 8,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108055",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "b c a e f d",
+                        "c b d a e f",
+                        "d c e b f a",
+                        "a f e d c b"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "若元素a、b、c、d、e、f依次进栈，允许进栈、退栈操作交替进行，但不允许连续三次进行退栈工作，则不可能得到的出栈序列是？",
+            "content": "若元素a、b、c、d、e、f依次进栈，允许进栈、退栈操作交替进行，但不允许连续三次进行退栈工作，则不可能得到的出栈序列是？ @[](2)\n\nA. b c a e f d\nB. c b d a e f\nC. d c e b f a\nD. a f e d c b",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "122",
+            "description": "若元素a、b、c、d、e、f依次进栈，允许进栈、退栈操作交替进行，但不允许连续三次进行退栈工作，则不可能得到的出栈序列是？",
+            "problemPoolIndex": 9,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108056",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "2 3 4 1 5 6",
+                        "3 4 6 5 2 1",
+                        "5 4 3 6 1 2",
+                        "4 5 3 1 2 6"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "有六个元素以6、5、4、3、2、1的顺序进栈，问哪个不是合法的出栈序列？",
+            "content": "有六个元素以6、5、4、3、2、1的顺序进栈，问哪个不是合法的出栈序列？ @[](2)\n\nA. 2 3 4 1 5 6\nB. 3 4 6 5 2 1\nC. 5 4 3 6 1 2\nD. 4 5 3 1 2 6",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "124",
+            "description": "有六个元素以6、5、4、3、2、1的顺序进栈，问哪个不是合法的出栈序列？",
+            "problemPoolIndex": 10,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108057",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "$$i-j-1$$",
+                        "$$i-j$$",
+                        "$$j-i-1$$",
+                        "不确定"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "若一个栈的入栈序列为1、2、3、…、$$N$$，输出序列的第一个元素是$$i$$，则第$$j$$个输出元素是：",
+            "content": "若一个栈的入栈序列为1、2、3、…、$$N$$，输出序列的第一个元素是$$i$$，则第$$j$$个输出元素是： @[](2)\n\nA. $$i-j-1$$\nB. $$i-j$$\nC. $$j-i-1$$\nD. 不确定",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "125",
+            "description": "若一个栈的入栈序列为1、2、3、…、$$N$$，输出序列的第一个元素是$$i$$，则第$$j$$个输出元素是：",
+            "problemPoolIndex": 11,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108058",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "1",
+                        "3",
+                        "5",
+                        "6"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "将5个字母`ooops`按此顺序入栈，则有多少种不同的出栈顺序可以仍然得到`ooops`？",
+            "content": "将5个字母`ooops`按此顺序入栈，则有多少种不同的出栈顺序可以仍然得到`ooops`？ @[](2)\n\nA. 1\nB. 3 \nC. 5\nD. 6",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "127",
+            "description": "将5个字母`ooops`按此顺序入栈，则有多少种不同的出栈顺序可以仍然得到`ooops`？",
+            "problemPoolIndex": 12,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108059",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "1",
+                        "2",
+                        "$$n-1$$",
+                        "$$n$$"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "给定一个堆栈的入栈序列为{ 1, 2, $$\\cdots$$, $$n$$ }，出栈序列为{ $$p_1$$, $$p_2$$,",
+            "content": "给定一个堆栈的入栈序列为{ 1, 2, $$\\cdots$$, $$n$$ }，出栈序列为{ $$p_1$$, $$p_2$$, $$\\cdots$$, $$p_n$$ }。如果$$p_2 \u003d n$$，则存在多少种不同的出栈序列？@[](2)\n\nA. 1\nB. 2\nC. $$n-1$$\nD. $$n$$",
+            "type": "MULTIPLE_CHOICE",
+            "author": "徐镜春",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "2207",
+            "description": "给定一个堆栈的入栈序列为{ 1, 2, $$\\cdots$$, $$n$$ }，出栈序列为{ $$p_1$$, $$p_2$$, $$\\cdots$$, $$p_n$$ }。如果$$p_2 \u003d n$$，则存在多少种不同的出栈序列？",
+            "problemPoolIndex": 13,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108060",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "删除栈顶元素",
+                        "删除栈底元素",
+                        "判断栈是否为空",
+                        "将栈置为空栈"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "以下不是栈的基本运算的是(    )。",
+            "content": "以下不是栈的基本运算的是(    )。   @[](2)\n\nA. 删除栈顶元素 \nB. 删除栈底元素\nC. 判断栈是否为空\nD. 将栈置为空栈",
+            "type": "MULTIPLE_CHOICE",
+            "author": "严冰",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "5369",
+            "description": "以下不是栈的基本运算的是(    )。",
+            "problemPoolIndex": 14,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "2"
+        },
+        {
+            "id": "1854547412456108061",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "较快",
+                        "较慢",
+                        "相同",
+                        "无法确定"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "一个递归的定义可以用递归过程求解，也可以用非递归过程求解，但单从运行时间来看， 通常递归过程比非递归过程（     ）。",
+            "content": "一个递归的定义可以用递归过程求解，也可以用非递归过程求解，但单从运行时间来看， 通常递归过程比非递归过程（     ）。   @[](2)\n\nA. 较快\nB. 较慢\nC. 相同\nD. 无法确定",
+            "type": "MULTIPLE_CHOICE",
+            "author": "严冰",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "5393",
+            "description": "一个递归的定义可以用递归过程求解，也可以用非递归过程求解，但单从运行时间来看， 通常递归过程比非递归过程（     ）。",
+            "problemPoolIndex": 15,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "2"
+        },
+        {
+            "id": "1854547412456108062",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "ST.top !\u003d -1",
+                        "ST.top \u003d\u003d -1",
+                        "ST.top !\u003d MaxSize - 1",
+                        "ST.top \u003d\u003d MaxSize - 1"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "设顺序栈的栈顶指针（int 类型）指向栈顶元素位置，则判断一个栈ST（最多元素为MaxSize）为栈满的条件是（）。",
+            "content": "设顺序栈的栈顶指针（int 类型）指向栈顶元素位置，则判断一个栈ST（最多元素为MaxSize）为栈满的条件是（）。   @[](2)\n\nA. ST.top !\u003d -1\nB. ST.top \u003d\u003d -1\nC. ST.top !\u003d MaxSize - 1\nD. ST.top \u003d\u003d MaxSize - 1",
+            "type": "MULTIPLE_CHOICE",
+            "author": "严冰",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "5405",
+            "description": "设顺序栈的栈顶指针（int 类型）指向栈顶元素位置，则判断一个栈ST（最多元素为MaxSize）为栈满的条件是（）。",
+            "problemPoolIndex": 16,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "2"
+        },
+        {
+            "id": "1854547412456108063",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "1,2,3,4",
+                        "4,1,2,3",
+                        "4,3,2,1",
+                        "1,3,4,2"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "假设一个栈的输入序列是1，2，3，4，则不可能得到的输出序列是（ ）。   ",
+            "content": "假设一个栈的输入序列是1，2，3，4，则不可能得到的输出序列是（ ）。   @[](2)\nA. 1,2,3,4\nB. 4,1,2,3\nC. 4,3,2,1\nD. 1,3,4,2\n",
+            "type": "MULTIPLE_CHOICE",
+            "author": "李廷元",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "928507710689026048",
+            "description": "假设一个栈的输入序列是1，2，3，4，则不可能得到的输出序列是（ ）。",
+            "problemPoolIndex": 17,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "39"
+        },
+        {
+            "id": "1854547412456108064",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "1",
+                        "3",
+                        "5",
+                        "1或者5"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "设一个堆栈的入栈顺序是1、2、3、4、5。若第一个出栈的元素是4，则最后一个出栈的元素必定是\\_\\_\\_\\_。 ",
+            "content": "设一个堆栈的入栈顺序是1、2、3、4、5。若第一个出栈的元素是4，则最后一个出栈的元素必定是\\_\\_\\_\\_。 @[](2)\nA. 1\nB. 3\nC. 5\nD. 1或者5\n",
+            "type": "MULTIPLE_CHOICE",
+            "author": "李廷元",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "1008710247555878912",
+            "description": "设一个堆栈的入栈顺序是1、2、3、4、5。若第一个出栈的元素是4，则最后一个出栈的元素必定是\\_\\_\\_\\_。",
+            "problemPoolIndex": 18,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "39"
+        },
+        {
+            "id": "1854547412456108065",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "堆栈",
+                        "队列",
+                        "树",
+                        "图"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "为解决计算机主机与打印机之间速度不匹配问题，通常设置一个打印数据缓冲区，主机将要输出的数据依次写入该缓冲区，而打印机则依次从该缓",
+            "content": "为解决计算机主机与打印机之间速度不匹配问题，通常设置一个打印数据缓冲区，主机将要输出的数据依次写入该缓冲区，而打印机则依次从该缓冲区中取出数据。该缓冲区的逻辑结构应该是？ @[](1)\n\nA. 堆栈\nB. 队列\nC. 树\nD. 图",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "139",
+            "description": "为解决计算机主机与打印机之间速度不匹配问题，通常设置一个打印数据缓冲区，主机将要输出的数据依次写入该缓冲区，而打印机则依次从该缓冲区中取出数据。该缓冲区的逻辑结构应该是？",
+            "problemPoolIndex": 19,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108066",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "b a c d e",
+                        "d b a c e",
+                        "e c b a d",
+                        "d b c a e"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "某队列允许在其两端进行入队操作，但仅允许在一端进行出队操作。若元素a、b、c、d、e依次入此队列后再进行出队操作，则不可能得到的",
+            "content": "某队列允许在其两端进行入队操作，但仅允许在一端进行出队操作。若元素a、b、c、d、e依次入此队列后再进行出队操作，则不可能得到的出队序列是： @[](2)\n\nA. b a c d e\nB. d b a c e\nC. e c b a d\nD. d b c a e",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "141",
+            "description": "某队列允许在其两端进行入队操作，但仅允许在一端进行出队操作。若元素a、b、c、d、e依次入此队列后再进行出队操作，则不可能得到的出队序列是：",
+            "problemPoolIndex": 20,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108067",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "`m-1`",
+                        "`m`",
+                        "`m+1`",
+                        "不能确定"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "如果循环队列用大小为`m`的数组表示，且用队头指针`front`和队列元素个数`size`代替一般循环队列中的`front`和`",
+            "content": "如果循环队列用大小为`m`的数组表示，且用队头指针`front`和队列元素个数`size`代替一般循环队列中的`front`和`rear`指针来表示队列的范围，那么这样的循环队列可以容纳的元素个数最多为： @[](2)\n\nA. `m-1`\nB. `m`\nC. `m+1`\nD. 不能确定",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "143",
+            "description": "如果循环队列用大小为`m`的数组表示，且用队头指针`front`和队列元素个数`size`代替一般循环队列中的`front`和`rear`指针来表示队列的范围，那么这样的循环队列可以容纳的元素个数最多为：",
+            "problemPoolIndex": 21,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108068",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "f-\u003enext\u003ds; f\u003ds;",
+                        "r-\u003enext\u003ds; r\u003ds;",
+                        "s-\u003enext\u003ds; r\u003ds;",
+                        "s-\u003enext\u003df; f\u003ds;"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "在一个不带头结点的非空链式队列中,假设f和r分别为队头和队尾指针,则插入s所指的结点运算是(  )。",
+            "content": "在一个不带头结点的非空链式队列中,假设f和r分别为队头和队尾指针,则插入s所指的结点运算是(  )。   @[](2)\nA. f-\u003enext\u003ds; f\u003ds;\nB. r-\u003enext\u003ds; r\u003ds;\nC. s-\u003enext\u003ds; r\u003ds; \nD. s-\u003enext\u003df; f\u003ds;",
+            "type": "MULTIPLE_CHOICE",
+            "author": "严冰",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "5375",
+            "description": "在一个不带头结点的非空链式队列中,假设f和r分别为队头和队尾指针,则插入s所指的结点运算是(  )。",
+            "problemPoolIndex": 22,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "2"
+        },
+        {
+            "id": "1854547412456108069",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "与队头指针和队尾指针的值有关",
+                        "只与队尾指针的值有关，与队头指针的值无关",
+                        "只与数组大小有关，与队首指针和队尾指针的值无关",
+                        "与曾经进行过多少次插入操作有关"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "循环顺序队列中是否可以插入下一个元素（）。",
+            "content": "循环顺序队列中是否可以插入下一个元素（）。   @[](2)\n\nA. 与队头指针和队尾指针的值有关\nB. 只与队尾指针的值有关，与队头指针的值无关\nC. 只与数组大小有关，与队首指针和队尾指针的值无关\nD. 与曾经进行过多少次插入操作有关",
+            "type": "MULTIPLE_CHOICE",
+            "author": "严冰",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "5407",
+            "description": "循环顺序队列中是否可以插入下一个元素（）。",
+            "problemPoolIndex": 23,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "2"
+        },
+        {
+            "id": "1854547412456108070",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "1, 2, 5, 6, 4, 3",
+                        "2, 3, 4, 5, 6, 1",
+                        "3, 4, 5, 6, 1, 2",
+                        "6, 5, 4, 3, 2, 1"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "现有队列 Q 与栈 S，初始时 Q 中的元素依次是{ 1, 2, 3, 4, 5, 6 }（1在队头），S 为空。若允许下列3种",
+            "content": "现有队列 Q 与栈 S，初始时 Q 中的元素依次是{ 1, 2, 3, 4, 5, 6 }（1在队头），S 为空。若允许下列3种操作：（1）出队并输出出队元素；（2）出队并将出队元素入栈；（3）出栈并输出出栈元素，则不能得到的输出序列是：@[](2)\n\nA. 1, 2, 5, 6, 4, 3\nB. 2, 3, 4, 5, 6, 1\nC. 3, 4, 5, 6, 1, 2\nD. 6, 5, 4, 3, 2, 1\n",
+            "type": "MULTIPLE_CHOICE",
+            "author": "考研真题",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "954567437138776064",
+            "description": "现有队列 Q 与栈 S，初始时 Q 中的元素依次是{ 1, 2, 3, 4, 5, 6 }（1在队头），S 为空。若允许下列3种操作：（1）出队并输出出队元素；（2）出队并将出队元素入栈；（3）出栈并输出出栈元素，则不能得到的输出序列是：",
+            "problemPoolIndex": 24,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412456108071",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "1和5",
+                        "2和4",
+                        "4和2",
+                        "5和1"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "若用一个大小为6的数组来实现循环队列，且当前rear和fornt的值分别为0和3。从当前队列中删除一个元素，再加入两个元素后，r",
+            "content": "若用一个大小为6的数组来实现循环队列，且当前rear和fornt的值分别为0和3。从当前队列中删除一个元素，再加入两个元素后，rear和front的值分别为（    ）。   @[](2)\n\nA. 1和5 \nB. 2和4\nC. 4和2\nD. 5和1",
+            "type": "MULTIPLE_CHOICE",
+            "author": "严冰",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "5387",
+            "description": "若用一个大小为6的数组来实现循环队列，且当前rear和fornt的值分别为0和3。从当前队列中删除一个元素，再加入两个元素后，rear和front的值分别为（    ）。",
+            "problemPoolIndex": 25,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "2"
+        },
+        {
+            "id": "1854547412456108072",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "3,2,5,6,4,1",
+                        "1,2,3,4,5,6",
+                        "6,5,4,3,2,1",
+                        "4,5,3,2,6,1"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "设一数列的顺序为1，2，3，4，5，6，通过队列操作可以得到（ ）的输出序列。",
+            "content": "设一数列的顺序为1，2，3，4，5，6，通过队列操作可以得到（ ）的输出序列。   @[](2)\n\nA. 3,2,5,6,4,1 \nB. 1,2,3,4,5,6\nC. 6,5,4,3,2,1\nD. 4,5,3,2,6,1",
+            "type": "MULTIPLE_CHOICE",
+            "author": "严冰",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "5389",
+            "description": "设一数列的顺序为1，2，3，4，5，6，通过队列操作可以得到（ ）的输出序列。",
+            "problemPoolIndex": 26,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "2"
+        },
+        {
+            "id": "1854547412460302336",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "QU.front \u003d\u003d QU.rear",
+                        "QU.front !\u003d QU.rear",
+                        "QU.front \u003d\u003d (QU.rear + 1) % MaxSize",
+                        "QU.front !\u003d (QU.rear + 1) % MaxSize"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "判断一个循环队列QU（最多元素为MaxSize）为空的条件是（）。",
+            "content": "判断一个循环队列QU（最多元素为MaxSize）为空的条件是（）。   @[](2)\n\nA. QU.front \u003d\u003d QU.rear\nB. QU.front !\u003d QU.rear\nC. QU.front \u003d\u003d (QU.rear + 1) % MaxSize\nD. QU.front !\u003d (QU.rear + 1) % MaxSize",
+            "type": "MULTIPLE_CHOICE",
+            "author": "严冰",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "5408",
+            "description": "判断一个循环队列QU（最多元素为MaxSize）为空的条件是（）。",
+            "problemPoolIndex": 27,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "2"
+        },
+        {
+            "id": "1854547412460302337",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "链头",
+                        "链尾",
+                        "链中",
+                        "均可以"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "用单链表表示的链队的队头在链表的（）位置。",
+            "content": "用单链表表示的链队的队头在链表的（）位置。   @[](2)\n\nA. 链头\nB. 链尾\nC. 链中\nD. 均可以",
+            "type": "MULTIPLE_CHOICE",
+            "author": "严冰",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "5410",
+            "description": "用单链表表示的链队的队头在链表的（）位置。",
+            "problemPoolIndex": 28,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "2"
+        },
+        {
+            "id": "1854547412460302338",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "栈的插入操作是在栈顶进行，插入时需将栈内所有元素后移；",
+                        "栈是后进先出的结构，出栈时除了栈顶元素，其余元素无需移动；",
+                        "循环队列的出队操作删除的是队头元素，采用循环队列存储时，其余队列元素均需要移动；",
+                        "链队列的入队操作在表尾进行，操作时间与队列长度成正比"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "关于栈和队列的下列说法正确的是（）   ",
+            "content": "关于栈和队列的下列说法正确的是（）   @[](2)\n\nA. 栈的插入操作是在栈顶进行，插入时需将栈内所有元素后移；\nB. 栈是后进先出的结构，出栈时除了栈顶元素，其余元素无需移动；\nC. 循环队列的出队操作删除的是队头元素，采用循环队列存储时，其余队列元素均需要移动；\nD. 链队列的入队操作在表尾进行，操作时间与队列长度成正比\n",
+            "type": "MULTIPLE_CHOICE",
+            "author": "DS课程组",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "943674072279818240",
+            "description": "关于栈和队列的下列说法正确的是（）",
+            "problemPoolIndex": 29,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "99"
+        },
+        {
+            "id": "1854547412460302339",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "只带队头指针的非循环双链表",
+                        "只带队头指针的循环双链表",
+                        "只带队尾指针的循环双链表",
+                        "只带队尾指针的循环单链表"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "最不适合用作链队的链表是（）。",
+            "content": "最不适合用作链队的链表是（）。   @[](2)\n\nA. 只带队头指针的非循环双链表\nB. 只带队头指针的循环双链表\nC. 只带队尾指针的循环双链表\nD. 只带队尾指针的循环单链表",
+            "type": "MULTIPLE_CHOICE",
+            "author": "严冰",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "5409",
+            "description": "最不适合用作链队的链表是（）。",
+            "problemPoolIndex": 30,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412460302340",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "仅 1",
+                        "仅 1、2、3",
+                        "仅 1、3、4",
+                        "仅 2、3、4"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "下列关于栈的叙述中，错误的是：",
+            "content": "下列关于栈的叙述中，错误的是：@[](2)\n\n1. 采用非递归方式重写递归程序时必须使用栈\n2. 函数调用时，系统要用栈保存必要的信息\n3. 只要确定了入栈次序，即可确定出栈次序\n4. 栈是一种受限的线性表，允许在其两端进行操作\n\nA. 仅 1\nB. 仅 1、2、3\nC. 仅 1、3、4\nD. 仅 2、3、4",
+            "type": "MULTIPLE_CHOICE",
+            "author": "考研试卷",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "4934",
+            "description": "下列关于栈的叙述中，错误的是：\n\n1. 采用非递归方式重写递归程序时必须使用栈\n2. 函数调用时，系统要用栈保存必要的信息\n3. 只要确定了入栈次序，即可确定出栈次序\n4. 栈是一种受限的线性表，允许在其两端进行操作",
+            "problemPoolIndex": 31,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412460302341",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "+(\\*-",
+                        "+(-\\*",
+                        "/+(\\*-\\*",
+                        "/+-\\*"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "假设栈初始为空，将中缀表达式a/b+(c\\*d-e\\*f)/g转换为等价的后缀表达式的过程中，当扫描到f时，栈中的元素依次是（　",
+            "content": "假设栈初始为空，将中缀表达式a/b+(c\\*d-e\\*f)/g转换为等价的后缀表达式的过程中，当扫描到f时，栈中的元素依次是（　）。   @[](2)\n\nA. +(\\*-\nB. +(-\\*\nC. /+(\\*-\\*\nD. /+-\\*\n",
+            "type": "MULTIPLE_CHOICE",
+            "author": "王东",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "1181406767479541760",
+            "description": "假设栈初始为空，将中缀表达式a/b+(c\\*d-e\\*f)/g转换为等价的后缀表达式的过程中，当扫描到f时，栈中的元素依次是（　）。",
+            "problemPoolIndex": 32,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "73"
+        },
+        {
+            "id": "1854547412460302342",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "main()→S(1)→S(0)",
+                        "S(0)→S(1)→main()",
+                        "main()→S(0)→S(1)",
+                        "S(1)→S(0)→main()"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "已知程序如下：。   ",
+            "content": "已知程序如下：。   \n```\nint S(int n)\n{ return (n\u003c\u003d0)?0:s(n-1)+n;}\nvoid main()\n{\n count\u003c\u003cS(1);\n}\n```\n 程序运行时使用栈来保存调用过程的信息，自栈底到栈顶保存的信息依次对应的是（　）@[](2)\nA. main()→S(1)→S(0)\nB. S(0)→S(1)→main()\nC. main()→S(0)→S(1)\nD. S(1)→S(0)→main()\n",
+            "type": "MULTIPLE_CHOICE",
+            "author": "王东",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "1181408544920719360",
+            "description": "已知程序如下：。\n```\nint S(int n)\n{ return (n\u003c\u003d0)?0:s(n-1)+n;}\nvoid main()\n{\n count\u003c\u003cS(1);\n}\n```\n 程序运行时使用栈来保存调用过程的信息，自栈底到栈顶保存的信息依次对应的是（　）",
+            "problemPoolIndex": 33,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "73"
+        },
+        {
+            "id": "1854547412460302343",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "-15",
+                        "15",
+                        "-20",
+                        "20"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "若栈$$S_1$$中保存整数，栈$$S_2$$中保存运算符，函数`F()`依次执行下述各步操作：",
+            "content": "若栈$$S_1$$中保存整数，栈$$S_2$$中保存运算符，函数`F()`依次执行下述各步操作：\n\n- （1）从$$S_1$$中依次弹出两个操作数`a`和`b`；\n- （2）从$$S_2$$中弹出一个运算符`op`；\n- （3）执行相应的运算`b op a`；\n- （4）将运算结果压入$$S_1$$中。\n\n假定$$S_1$$中的操作数依次是{ 5, 8, 3, 2 }（2在栈顶），$$S_2$$中的运算符依次是{ `*`, `-`, `+` }（+在栈顶）。调用3次`F()`后，$$S_1$$栈顶保存的值是：@[](2)\n\nA. -15\nB. 15\nC. -20\nD. 20\n",
+            "type": "MULTIPLE_CHOICE",
+            "author": "考研真题",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "954567192719904768",
+            "description": "若栈$$S_1$$中保存整数，栈$$S_2$$中保存运算符，函数`F()`依次执行下述各步操作：\n\n- （1）从$$S_1$$中依次弹出两个操作数`a`和`b`；\n- （2）从$$S_2$$中弹出一个运算符`op`；\n- （3）执行相应的运算`b op a`；\n- （4）将运算结果压入$$S_1$$中。\n\n假定$$S_1$$中的操作数依次是{ 5, 8, 3, 2 }（2在栈顶），$$S_2$$中的运算符依次是{ `*`, `-`, `+` }（+在栈顶）。调用3次`F()`后，$$S_1$$栈顶保存的值是：",
+            "problemPoolIndex": 34,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412460302344",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "b, a, c",
+                        "b, a, e",
+                        "b, c, a",
+                        "b, c, e"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "对空栈 $$S$$ 进行 Push 和 Pop 操作，入栈序列为 a, b, c, d, e，经过 Push, Push, Po",
+            "content": "对空栈 $$S$$ 进行 Push 和 Pop 操作，入栈序列为 a, b, c, d, e，经过 Push, Push, Pop, Push, Pop, Push, Push, Pop 操作后，得到的出栈序列是：@[](2)\n\nA. b, a, c\nB. b, a, e\nC. b, c, a\nD. b, c, e\n",
+            "type": "MULTIPLE_CHOICE",
+            "author": "考研真题",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "1217109727975522304",
+            "description": "对空栈 $$S$$ 进行 Push 和 Pop 操作，入栈序列为 a, b, c, d, e，经过 Push, Push, Pop, Push, Pop, Push, Push, Pop 操作后，得到的出栈序列是：",
+            "problemPoolIndex": 35,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412460302345",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "若 in 是 ST 的入栈序列， 则不能判断 out 是否为其可能的出栈序列\n",
+                        "若 out 是 ST 的出栈序列，则不能判断 in 是否为其可能的入栈序列",
+                        "若 in 是 ST 的入栈序列，out 是对应 in 的出栈序列， 则 in 与 out 一定不同",
+                        "若 in 是 ST 的入栈序列，out 是对应 in 的出栈序列， 则 in 与 out 可能互为倒序"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "给定有限符号集S , in和out均为S中所有元素的任意排列。 对于初始为空的栈ST, 下列叙述中，正确的是",
+            "content": "给定有限符号集 S , in 和 out 均为 S 中所有元素的任意排列。 对于初始为空的栈 ST, 下列叙述中，正确的是：\n",
+            "type": "MULTIPLE_CHOICE",
+            "author": "考研真题",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "1483713191192580096",
+            "description": "给定有限符号集 S , in 和 out 均为 S 中所有元素的任意排列。 对于初始为空的栈 ST, 下列叙述中，正确的是：\n",
+            "problemPoolIndex": 36,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412460302346",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "5、4、3、1、2",
+                        "5、3、1、2、4",
+                        "4、2、1、3、5",
+                        "4、1、3、2、5"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "已知初始为空的队列 Q 的一端仅能进行入队操作，另外一端既能进行入队操作又能进行出队操作。若 Q 的入队序列是 1、2、3、4、",
+            "content": "已知初始为空的队列 Q 的一端仅能进行入队操作，另外一端既能进行入队操作又能进行出队操作。若 Q 的入队序列是 1、2、3、4、5，则不能得到的出队序列是：\n@[](2)\n\nA. 5、4、3、1、2\nB. 5、3、1、2、4\nC. 4、2、1、3、5\nD. 4、1、3、2、5",
+            "type": "MULTIPLE_CHOICE",
+            "author": "考研真题",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "REVIEWED",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "1356496988987719680",
+            "description": "已知初始为空的队列 Q 的一端仅能进行入队操作，另外一端既能进行入队操作又能进行出队操作。若 Q 的入队序列是 1、2、3、4、5，则不能得到的出队序列是：",
+            "problemPoolIndex": 37,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "1"
+        },
+        {
+            "id": "1854547412460302347",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "2",
+                        "3",
+                        "4",
+                        "5"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "栈容量至少为多少",
+            "content": "设栈S和队列Q的初始状态为空，元素1、2、3、4、5和6依次通过S，每个元素出栈后即进入Q，若6个元素出队的序列是2、6、5、4、3和1，则栈S的容量至少应该是（  ）",
+            "type": "MULTIPLE_CHOICE",
+            "author": "黄龙军",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "1641809889879818240",
+            "description": "设栈S和队列Q的初始状态为空，元素1、2、3、4、5和6依次通过S，每个元素出栈后即进入Q，若6个元素出队的序列是2、6、5、4、3和1，则栈S的容量至少应该是（  ）",
+            "problemPoolIndex": 38,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "170"
+        },
+        {
+            "id": "1854547412460302348",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "2和4",
+                        "2和6",
+                        "2和2",
+                        "2和0"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "若用大小为6的数组A【0..5】来实现循环队列，当前队头front值为0，队尾rear的值为4。当从队列中删除2个元，再插入2个",
+            "content": "若用大小为6的数组A【0..5】来实现循环队列，当前队头front值为0，队尾rear的值为4。当从队列中删除2个元，再插入2个元素后，front和rear的值为",
+            "type": "MULTIPLE_CHOICE",
+            "author": "YJ",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "1697100033269149696",
+            "description": "若用大小为6的数组A【0..5】来实现循环队列，当前队头front值为0，队尾rear的值为4。当从队列中删除2个元，再插入2个元素后，front和rear的值为",
+            "problemPoolIndex": 39,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "35"
+        },
+        {
+            "id": "1854547412460302349",
+            "label": "",
+            "score": 2,
+            "problemConfig": {
+                "solutionVisible": false,
+                "answerVisible": false,
+                "multipleChoiceProblemConfig": {
+                    "choices": [
+                        "27\n\n",
+                        "28\n\n",
+                        "7",
+                        "8"
+                    ],
+                    "maxDisplayChoicesPerLine": 1
+                }
+            },
+            "deadline": "1970-01-01T00:00:00Z",
+            "title": "循环队列的rear值",
+            "content": "设循环队列的元素存放在一维数组Q［0..19］（下标为0到19）中，队列非空时，front指示队头元素位置，rear指示队尾元素的后一个位置。如果队列中元素的个数为13，front的值为15，则rear的值是（  ）\n\n\n",
+            "type": "MULTIPLE_CHOICE",
+            "author": "黄龙军",
+            "difficulty": 0,
+            "compiler": "NO_COMPILER",
+            "problemStatus": "PENDING_REVIEW",
+            "lastSubmissionId": "0",
+            "solution": "",
+            "problemSetId": "1854547178661408768",
+            "problemId": "1630432763776151552",
+            "description": "设循环队列的元素存放在一维数组Q［0..19］（下标为0到19）中，队列非空时，front指示队头元素位置，rear指示队尾元素的后一个位置。如果队列中元素的个数为13，front的值为15，则rear的值是（  ）\n\n\n",
+            "problemPoolIndex": 40,
+            "indexInProblemPool": 1,
+            "authorOrganizationId": "170"
+        }
+    ],
+    "examLabelByProblemSetProblemId": {
+        "1854547412456108047": "",
+        "1854547412456108048": "",
+        "1854547412456108049": "",
+        "1854547412456108050": "",
+        "1854547412456108051": "",
+        "1854547412456108052": "",
+        "1854547412456108053": "",
+        "1854547412456108054": "",
+        "1854547412456108055": "",
+        "1854547412456108056": "",
+        "1854547412456108057": "",
+        "1854547412456108058": "",
+        "1854547412456108059": "",
+        "1854547412456108060": "",
+        "1854547412456108061": "",
+        "1854547412456108062": "",
+        "1854547412456108063": "",
+        "1854547412456108064": "",
+        "1854547412456108065": "",
+        "1854547412456108066": "",
+        "1854547412456108067": "",
+        "1854547412456108068": "",
+        "1854547412456108069": "",
+        "1854547412456108070": "",
+        "1854547412456108071": "",
+        "1854547412456108072": "",
+        "1854547412460302336": "",
+        "1854547412460302337": "",
+        "1854547412460302338": "",
+        "1854547412460302339": "",
+        "1854547412460302340": "",
+        "1854547412460302341": "",
+        "1854547412460302342": "",
+        "1854547412460302343": "",
+        "1854547412460302344": "",
+        "1854547412460302345": "",
+        "1854547412460302346": "",
+        "1854547412460302347": "",
+        "1854547412460302348": "",
+        "1854547412460302349": ""
+    }
+}

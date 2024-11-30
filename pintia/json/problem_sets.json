@@ -1,0 +1,50 @@
+{
+    "total": 2,
+    "problemSets": [
+        {
+            "id": "1854547178661408768",
+            "name": "24-25-1《数据结构与算法》栈和队列的存储和应用",
+            "type": "EXERCISE",
+            "timeType": "FIXED_TIME",
+            "status": "PENDING",
+            "organizationName": "浙江万里学院",
+            "ownerNickname": "zhanwh",
+            "manageable": false,
+            "createAt": "2024-11-07T15:31:17Z",
+            "updateAt": "2024-11-22T01:30:19Z",
+            "scoringRule": "NORMAL",
+            "organizationType": "UNKNOWN",
+            "ownerId": "906010526507360256",
+            "startAt": "2024-11-08T05:30:00Z",
+            "endAt": "2024-11-30T15:00:00Z",
+            "duration": 0,
+            "ownerOrganizationId": "123",
+            "stage": "NORMAL",
+            "feature": "NONE",
+            "sourceProblemSetId": "0"
+        },
+        {
+            "id": "1862140487967379456",
+            "name": "24-25-1 数据结构与算法-树与二叉树",
+            "type": "EXERCISE",
+            "timeType": "FIXED_TIME",
+            "status": "PENDING",
+            "organizationName": "浙江万里学院",
+            "ownerNickname": "zhanwh",
+            "manageable": false,
+            "createAt": "2024-11-28T14:24:23Z",
+            "updateAt": "2024-11-29T01:22:27Z",
+            "scoringRule": "NORMAL",
+            "organizationType": "UNKNOWN",
+            "ownerId": "906010526507360256",
+            "startAt": "2024-11-29T01:23:00Z",
+            "endAt": "2024-12-15T15:00:00Z",
+            "duration": 0,
+            "ownerOrganizationId": "123",
+            "stage": "NORMAL",
+            "feature": "NONE",
+            "sourceProblemSetId": "0"
+        }
+    ],
+    "homeworkByProblemSetId": {}
+}

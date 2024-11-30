@@ -1,4 +1,4 @@
-from .problem_exam import ProblemExam
+from .problem_sets_exam_problems import ProblemExam
 from .problem_ranking import ProblemRanking
 from .problem_exam_list import ProblemExamList
 from .problem_status import ProblemStatus
