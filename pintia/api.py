@@ -4,7 +4,7 @@ HOST = 'pintia.cn'
 import requests as r
 from .user_current import UserCurrent
 from .users_profile import UsersProfile
-from .problem_sets_exams import ProblemSetsExams, ProblemSetsExam
+from .problem_sets_exams import ProblemSetsExams
 from .problem_sets_exam_problem_status import ProblemSetsExamProblemStatus
 from .problem_sets_exam_problems import ProblemSetsExamProblems
 from .problem_sets_exam_problem_list import ProblemSetsExamProblemList
@@ -137,13 +137,14 @@ class Pintia:
         uri = f'/api/problem-sets/{problem_sets_id}/exam-problem-list?exam_id={exam_id}&problem_type={problem_type}&page={page}&limit={limit}'
         return ProblemSetsExamProblemList(self._get(uri))
 
-    def problem_sets_exam(self, problem_sets_id: str, exam_problem_id: str, problem_type):
-        uri = f'/api/problem-sets/{problem_sets_id}/exam-problems/?exam_id={exam_problem_id}&problem_type={problem_type}'
-        return ProblemSetsExam(self._get(uri))
-
-    def problem_sets_exam_problem(self, problem_sets_id: str, exam_problem_id: str):
+    def problem_sets_exam_problems_v1(self, problem_sets_id: str, exam_problem_id: str):
         uri = f'/api/problem-sets/{problem_sets_id}/exam-problems/{exam_problem_id}'
         return ProblemSetsExamProblems(self._get(uri))
+
+    def problem_sets_exam_problems_v2(self, problem_sets_id: str, exam_problem_id: str, problem_type):
+        uri = f'/api/problem-sets/{problem_sets_id}/exam-problems?exam_id={exam_problem_id}&problem_type={problem_type}'
+        return ProblemSetsExamProblems(self._get(uri))
+
 
     def problem_sets_exam_problem_submission(self, exam_id: str, problem_set_problem_id: str, compiler: str, program_content: str, problem_type: str):
         uri = f'/api/exams/{exam_id}/submissions'

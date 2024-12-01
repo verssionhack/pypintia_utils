@@ -3,7 +3,7 @@ from typing import List, Dict
 
 
 @dataclass
-class ProblemSets:
+class ProblemSetsItem:
     id: str
     name: str
     type: str
@@ -67,14 +67,14 @@ class HomeworkByProblemSetId:
 @dataclass
 class ProblemSets:
     total: int
-    problem_sets: List[ProblemSets]
+    problem_sets: List[ProblemSetsItem]
     homework_by_problem_set_id: HomeworkByProblemSetId
 
     def __init__(self, data: dict | None):
         if data is None:
             return None
         self.total = data.get("total")
-        self.problem_sets = [ProblemSets(i) for i in (data.get("problem_sets") if data.get("problem_sets") is not None else [])]
+        self.problem_sets = [ProblemSetsItem(i) for i in (data.get("problem_sets") if data.get("problem_sets") is not None else [])]
         self.homework_by_problem_set_id = HomeworkByProblemSetId(data.get("homework_by_problem_set_id"))
 
 

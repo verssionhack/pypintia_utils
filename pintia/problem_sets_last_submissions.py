@@ -14,6 +14,16 @@ class ProgrammingSubmissionDetail:
         self.program = data.get("program")
 
 
+@dataclass
+class CodeCompletionSubmissionDetail:
+    program: str
+
+    def __init__(self, data: dict | None):
+        if data is None:
+            return None
+        self.program = data.get("program")
+
+
 
 
 
@@ -21,6 +31,7 @@ class ProgrammingSubmissionDetail:
 class SubmissionDetails:
     problem_set_problem_id: str
     programming_submission_detail: ProgrammingSubmissionDetail
+    code_completion_submission_detail: CodeCompletionSubmissionDetail
     problem_id: str
 
     def __init__(self, data: dict | None):
@@ -28,6 +39,7 @@ class SubmissionDetails:
             return None
         self.problem_set_problem_id = data.get("problem_set_problem_id")
         self.programming_submission_detail = ProgrammingSubmissionDetail(data.get("programming_submission_detail"))
+        self.code_completion_submission_detail = CodeCompletionSubmissionDetail(data.get("code_completion_submission_detail"))
         self.problem_id = data.get("problem_id")
 
 

@@ -7,7 +7,7 @@ import os.path as op
 from pintia import Pintia, ProblemSubmissionStatus, ProblemType
 import json as j
 from pintia.problem_sets import ProblemSetsItem
-from pintia.problem_status import ProblemStatus
+from pintia.problem_sets_exam_problem_status import ProblemSetsExamProblemStatus as ProblemStatus
 from utils import load_cookie, parse_select_args, random_chars, format_c_code
 
 def main():
@@ -31,7 +31,7 @@ def main():
         exam_status = api.problem_sets_status(p.id)
         for problem in exam_status.problem_status:
             if problem.problem_submission_status == ProblemSubmissionStatus.PROBLEM_ACCEPTED.value:
-                exam_problems = api.problem_sets_exam_problem(p.id, problem.id)
+                exam_problems = api.problem_sets_exam_problems_v1(p.id, problem.id)
                 if problem.problem_type == ProblemType.CODE_COMPLETION.value:
                     last_submission = api.problem_sets_exam_problem_last_submissions(p.id, problem.id)
                     export[p.id][problem.id] = {
