@@ -1,0 +1,33 @@
+{
+    "bindings": {},
+    "studentUsers": [
+        {
+            "id": "1761754860845654020",
+            "studentNumber": "2023013121",
+            "name": "姚嘉程",
+            "userId": "1762027932215537664",
+            "image": "",
+            "organization": {
+                "id": "123",
+                "name": "浙江万里学院",
+                "code": "zjwu",
+                "type": "SCHOOL",
+                "logo": "719bf362-d606-4b17-9322-520dd30e612a.png"
+            }
+        }
+    ],
+    "userAccount": {
+        "account": {
+            "id": "1762027932215537664",
+            "type": "USER"
+        },
+        "balance": 0
+    },
+    "userRewardAccount": {
+        "account": {
+            "id": "1762027932215537664",
+            "type": "USER_REWARD"
+        },
+        "balance": 50
+    }
+}
