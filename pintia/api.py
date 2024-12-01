@@ -3,11 +3,11 @@ HOST = 'pintia.cn'
 
 import requests as r
 from .user_current import UserCurrent
-from .profile import Profile
-from .exams import Exams
-from .problem_status import ProblemStatus
-from .exam_problem import ExamProblem
-from .problem_exam_list import ProblemExamList
+from .users_profile import UsersProfile
+from .problem_sets_exams import ProblemSetsExams
+from .problem_sets_exam_problem_status import ProblemSetsExamProblemStatus
+from .problem_sets_exam_problems import ProblemSetsExamProblems
+from .problem_sets_exam_problem_list import ProblemSetsExamProblemList
 from .problem_exam import ProblemExam
 from .problem_exam_problem import ProblemExamProblem
 from .last_submissions import LastSubmissions
