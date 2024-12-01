@@ -4,15 +4,15 @@ HOST = 'pintia.cn'
 import requests as r
 from .user_current import UserCurrent
 from .users_profile import UsersProfile
-from .problem_sets_exams import ProblemSetsExams
+from .problem_sets_exams import ProblemSetsExams, ProblemSetsExam
 from .problem_sets_exam_problem_status import ProblemSetsExamProblemStatus
 from .problem_sets_exam_problems import ProblemSetsExamProblems
 from .problem_sets_exam_problem_list import ProblemSetsExamProblemList
-from .problem_exam import ProblemExam
-from .problem_exam_problem import ProblemExamProblem
-from .last_submissions import LastSubmissions
-from .problem_ranking import ProblemRanking
-from .problem_types import ProblemTypes
+from .problem_sets_exams import ProblemSetsExams
+from .problem_sets_exam_problems import ProblemSetsExamProblems
+from .problem_sets_last_submissions import ProblemSetsLastSubmissions
+from .problem_sets_rankings import ProblemSetsRankings
+from .problem_sets_problem_exam_problem_types import ProblemSetsProblemExamProblemTypes
 from .problem_sets import ProblemSets
 from .utils import dict_key2snake_name, parse_cookie
 import time
@@ -27,7 +27,7 @@ USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Ge
 class Pintia:
 
     def load_cookie(self, cookie: dict | str):
-        if type(cookie) == type(''):
+        if isinstance(cookie, str):
             cookie = parse_cookie(cookie)
         self.cookie = cookie
         self.session.cookies.update(self.cookie)
@@ -36,7 +36,7 @@ class Pintia:
 
 
     def __init__(self, cookie: dict | str | None = None):
-        self.url = f'https://pintia.cn'
+        self.url = 'https://pintia.cn'
         self.session = r.session()
         self.session.headers['user-agent'] = USER_AGENT
         self.session.headers['accept'] = 'application/json;charset=UTF-8'
@@ -106,11 +106,11 @@ class Pintia:
 
     def profile(self):
         uri = '/api/users/profile'
-        return Profile(self._get(uri))
+        return UsersProfile(self._get(uri))
 
     def current_user(self):
         uri = '/api/u/current'
-        return UserPacket(self._get(uri))
+        return UserCurrent(self._get(uri))
 
     #def problem_sets(self, limit: int, filter=f'{{"endAtAfter": "{DATE.tm_year:04}-{DATE.tm_mon:02}-{DATE.tm_mday-1:02}T16:00:00.000Z"}}', order_by='END_AT', asc=True):
     def problem_sets(self, limit: int, filter=f'{{"endAtAfter": "{DATE.tm_year:04}-{DATE.tm_mon:02}-{DATE.tm_mday:02}T{DATE.tm_hour:02}:{DATE.tm_min:02}:00.000Z"}}', order_by='END_AT', asc=True):
@@ -119,7 +119,7 @@ class Pintia:
 
     def problem_sets_exams(self, problem_sets_id: str):
         uri = f'/api/problem-sets/{problem_sets_id}/exams'
-        return Exams(self._get(uri))
+        return ProblemSetsExams(self._get(uri))
 
     def problem_sets_exams_start(self, problem_sets_id: str):
         uri = f'/api/problem-sets/{problem_sets_id}/exams'
@@ -131,19 +131,19 @@ class Pintia:
 
     def problem_sets_status(self, problem_sets_id: str):
         uri = f'/api/problem-sets/{problem_sets_id}/exam-problem-status'
-        return ProblemStatus(self._get(uri))
+        return ProblemSetsExamProblemStatus(self._get(uri))
 
     def problem_sets_exam_list(self, problem_sets_id: str, exam_id: str, problem_type, page: int, limit: int):
         uri = f'/api/problem-sets/{problem_sets_id}/exam-problem-list?exam_id={exam_id}&problem_type={problem_type}&page={page}&limit={limit}'
-        return ProblemExamList(self._get(uri))
+        return ProblemSetsExamProblemList(self._get(uri))
 
     def problem_sets_exam(self, problem_sets_id: str, exam_problem_id: str, problem_type):
         uri = f'/api/problem-sets/{problem_sets_id}/exam-problems/?exam_id={exam_problem_id}&problem_type={problem_type}'
-        return ProblemExam(self._get(uri))
+        return ProblemSetsExam(self._get(uri))
 
     def problem_sets_exam_problem(self, problem_sets_id: str, exam_problem_id: str):
         uri = f'/api/problem-sets/{problem_sets_id}/exam-problems/{exam_problem_id}'
-        return ProblemExamProblem(self._get(uri))
+        return ProblemSetsExamProblems(self._get(uri))
 
     def problem_sets_exam_problem_submission(self, exam_id: str, problem_set_problem_id: str, compiler: str, program_content: str, problem_type: str):
         uri = f'/api/exams/{exam_id}/submissions'
@@ -161,17 +161,17 @@ class Pintia:
 
     def problem_sets_exam_problem_last_submissions(self, problem_sets_id: str, exam_problem_id: str):
         uri = f'/api/problem-sets/{problem_sets_id}/last-submissions?problem_set_problem_id={exam_problem_id}'
-        return LastSubmissions(self._get(uri))
+        return ProblemSetsLastSubmissions(self._get(uri))
 
 
 
     def problem_sets_rankings(self, problem_sets_id: str, page: int, limit: int):
         uri = f'/api/problem-sets/{problem_sets_id}/rankings?page={page}&limit={limit}'
-        return ProblemRanking(self._get(uri))
+        return ProblemSetsRankings(self._get(uri))
 
     def problem_types(self, problem_sets_id: str):
         uri = f'/api/problem-sets/{problem_sets_id}/problem-types'
-        return ProblemTypes(self._get(uri))
+        return ProblemSetsProblemExamProblemTypes(self._get(uri))
 
     def login(self, phone: str, password: str):
         uri = '/api/users/sessions'
@@ -190,5 +190,3 @@ class Pintia:
 
         self._profile = self.current_user()
         print(f'Load as {self._profile.user.nickname}')
-    
-

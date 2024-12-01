@@ -1,0 +1,78 @@
+{
+    "problemSetProblem": {
+        "id": "1862140591449247801",
+        "label": "6-1",
+        "score": 10,
+        "problemConfig": {
+            "codeCompletionProblemConfig": {
+                "timeLimit": 400,
+                "memoryLimit": 65536,
+                "codeSizeLimit": 16,
+                "cases": {
+                    "0": {
+                        "hint": "",
+                        "showHint": false,
+                        "score": 6,
+                        "isPublic": false
+                    },
+                    "1": {
+                        "hint": "",
+                        "showHint": false,
+                        "score": 1,
+                        "isPublic": false
+                    },
+                    "2": {
+                        "hint": "",
+                        "showHint": false,
+                        "score": 1,
+                        "isPublic": false
+                    },
+                    "3": {
+                        "hint": "",
+                        "showHint": false,
+                        "score": 1,
+                        "isPublic": false
+                    },
+                    "4": {
+                        "hint": "",
+                        "showHint": false,
+                        "score": 1,
+                        "isPublic": false
+                    }
+                },
+                "exampleTestDatas": [],
+                "testdataDescriptionCode": "",
+                "tools": [],
+                "ignorePresentationError": false,
+                "pathAsStdin": "",
+                "pathAsStdout": ""
+            },
+            "solutionVisible": false,
+            "answerVisible": false
+        },
+        "deadline": "1970-01-01T00:00:00Z",
+        "title": "求二叉树高度",
+        "content": "本题要求给定二叉树的高度。\n\n### 函数接口定义：\n```c++\nint GetHeight( BinTree BT );\n```\n\n其中`BinTree`结构定义如下：\n```c++\ntypedef struct TNode *Position;\ntypedef Position BinTree;\nstruct TNode{\n    ElementType Data;\n    BinTree Left;\n    BinTree Right;\n};\n```\n要求函数返回给定二叉树BT的高度值。\n\n### 裁判测试程序样例：\n```c++\n#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n\ntypedef char ElementType;\ntypedef struct TNode *Position;\ntypedef Position BinTree;\nstruct TNode{\n    ElementType Data;\n    BinTree Left;\n    BinTree Right;\n};\n\nBinTree CreatBinTree(); /* 实现细节忽略 */\nint GetHeight( BinTree BT );\n\nint main()\n{\n    BinTree BT \u003d CreatBinTree();\n    printf(\"%d\\n\", GetHeight(BT));\n    return 0;\n}\n/* 你的代码将被嵌在这里 */\n```\n\n### 输出样例（对于图中给出的树）：\n![](~/40)\n```\n4\n```",
+        "type": "CODE_COMPLETION",
+        "author": "陈越",
+        "difficulty": 0,
+        "compiler": "GCC",
+        "problemStatus": "REVIEWED",
+        "lastSubmissionId": "0",
+        "solution": "",
+        "problemSetId": "1862140487967379456",
+        "problemId": "350",
+        "description": "本题要求给定二叉树的高度。\n\n### 函数接口定义：\n```c++\nint GetHeight( BinTree BT );\n```\n\n其中`BinTree`结构定义如下：\n```c++\ntypedef struct TNode *Position;\ntypedef Position BinTree;\nstruct TNode{\n    ElementType Data;\n    BinTree Left;\n    BinTree Right;\n};\n```\n要求函数返回给定二叉树BT的高度值。\n\n### 裁判测试程序样例：\n```c++\n#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n\ntypedef char ElementType;\ntypedef struct TNode *Position;\ntypedef Position BinTree;\nstruct TNode{\n    ElementType Data;\n    BinTree Left;\n    BinTree Right;\n};\n\nBinTree CreatBinTree(); /* 实现细节忽略 */\nint GetHeight( BinTree BT );\n\nint main()\n{\n    BinTree BT \u003d CreatBinTree();\n    printf(\"%d\\n\", GetHeight(BT));\n    return 0;\n}\n/* 你的代码将被嵌在这里 */\n```\n\n### 输出样例（对于图中给出的树）：\n![](~/40)\n```\n4\n```",
+        "problemPoolIndex": 1,
+        "indexInProblemPool": 1,
+        "authorOrganizationId": "1"
+    },
+    "organization": {
+        "id": "1",
+        "name": "浙江大学",
+        "code": "zju",
+        "type": "SCHOOL",
+        "logo": "ffecf2a6-4935-4344-b640-35360f3c1f88.png"
+    },
+    "examLabel": "6-1"
+}
