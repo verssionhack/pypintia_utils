@@ -2,7 +2,7 @@ HOST = 'pintia.cn'
 
 
 import requests as r
-from .user import UserPacket
+from .user_current import UserCurrent
 from .profile import Profile
 from .exams import Exams
 from .problem_status import ProblemStatus

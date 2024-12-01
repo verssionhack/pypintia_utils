@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from typing import *
+from typing import List, Dict
+
 
 @dataclass
 class Detail:
@@ -65,7 +66,7 @@ class User:
         self.email = data.get("email")
         self.nickname = data.get("nickname")
         self.fake = data.get("fake")
-        self.roles = [str(i) for i in (data.get("roles") if data.get("roles") != None else [])]
+        self.roles = [str(i) for i in (data.get("roles") if data.get("roles") is not None else [])]
         self.organization_id = data.get("organization_id")
         self.is_organization_admin = data.get("is_organization_admin")
         self.organization_subdomain = data.get("organization_subdomain")

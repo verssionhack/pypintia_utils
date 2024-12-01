@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from typing import *
+from typing import List, Dict
+
 
 @dataclass
 class ExampleTestDatas:
@@ -40,7 +41,7 @@ class ProgrammingProblemConfig:
         self.memory_limit = data.get("memory_limit")
         self.code_size_limit = data.get("code_size_limit")
         self.cases = data.get("cases")
-        self.example_test_datas = [ExampleTestDatas(i) for i in (data.get("example_test_datas") if data.get("example_test_datas") != None else [])]
+        self.example_test_datas = [ExampleTestDatas(i) for i in (data.get("example_test_datas") if data.get("example_test_datas") is not None else [])]
         self.testdata_description_code = data.get("testdata_description_code")
         self.customize_limits = data.get("customize_limits")
         self.stack_size_limit = data.get("stack_size_limit")

@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from typing import *
+from typing import List, Dict
+
 
 @dataclass
 class ProblemStatus:
@@ -34,7 +35,7 @@ class ProblemSetsExamProblemStatus:
     def __init__(self, data: dict | None):
         if data is None:
             return None
-        self.problem_status = [ProblemStatus(i) for i in (data.get("problem_status") if data.get("problem_status") != None else [])]
+        self.problem_status = [ProblemStatus(i) for i in (data.get("problem_status") if data.get("problem_status") is not None else [])]
         self.exam_label_by_problem_set_problem_id = data.get("exam_label_by_problem_set_problem_id")
 
 

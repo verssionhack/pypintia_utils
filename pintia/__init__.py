@@ -1,13 +1,12 @@
-from .problem_sets_exam_problems import ProblemExam
-from .problem_ranking import ProblemRanking
-from .problem_exam_list import ProblemExamList
-from .problem_status import ProblemStatus
-from .problem_types import ProblemTypes
-from .problem_exam_problem import ProblemExamProblem
+from .problem_sets_exam_problems import ProblemSetsExamProblems
+from .problem_sets_problem_rankings import ProblemSetsProblemRankings
+from .problem_sets_exam_problem_list import ProblemSetsExamProblemList
+from .problem_sets_exam_problem_status import ProblemStatus
+from .problem_sets_problem_exam_problem_types import ProblemSetsProblemExamProblemTypes
+from .problem_sets_exam_problems import ProblemSetsExamProblems
 from .problem_sets import ProblemSets
 
-from .profile import Profile
-from .user import UserPacket as User
+from .user_current import UserCurrent
 from .exam_problem import ExamProblem
 from .last_submissions import LastSubmissions
 from .exams import Exams
@@ -24,10 +23,12 @@ class ProblemType(Enum):
     MULTIPLE_CHOICE = 'MULTIPLE_CHOICE'
     MULTIPLE_CHOICE_MORE_THAN_ONE_ANSWER = 'MULTIPLE_CHOICE_MORE_THAN_ONE_ANSWER'
 
+
 class ProblemSubmissionStatus(Enum):
     PROBLEM_NO_ANSWER = 'PROBLEM_NO_ANSWER'
     PROBLEM_ACCEPTED = 'PROBLEM_ACCEPTED'
     PROBLEM_WRONG_ANSWER = 'PROBLEM_WRONG_ANSWER'
+
 
 class ExamStatus(Enum):
     PROCESSING = 'PROCESSING'

@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from typing import *
+from typing import List, Dict
+
 
 @dataclass
 class ProblemSetProblems:
@@ -50,7 +51,7 @@ class ProblemSetsExamProblemList:
         if data is None:
             return None
         self.total = data.get("total")
-        self.problem_set_problems = [ProblemSetProblems(i) for i in (data.get("problem_set_problems") if data.get("problem_set_problems") != None else [])]
+        self.problem_set_problems = [ProblemSetProblems(i) for i in (data.get("problem_set_problems") if data.get("problem_set_problems") is not None else [])]
         self.exam_label_by_problem_set_problem_id = data.get("exam_label_by_problem_set_problem_id")
 
 

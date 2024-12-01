@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from typing import *
+from typing import List, Dict
+
 
 @dataclass
 class ProgrammingSubmissionDetail:
@@ -147,8 +148,8 @@ class Submission:
         self.compiler = data.get("compiler")
         self.time = data.get("time")
         self.memory = data.get("memory")
-        self.submission_details = [SubmissionDetails(i) for i in (data.get("submission_details") if data.get("submission_details") != None else [])]
-        self.judge_response_contents = [JudgeResponseContents(i) for i in (data.get("judge_response_contents") if data.get("judge_response_contents") != None else [])]
+        self.submission_details = [SubmissionDetails(i) for i in (data.get("submission_details") if data.get("submission_details") is not None else [])]
+        self.judge_response_contents = [JudgeResponseContents(i) for i in (data.get("judge_response_contents") if data.get("judge_response_contents") is not None else [])]
         self.hints = Hints(data.get("hints"))
         self.problem_set_id = data.get("problem_set_id")
         self.preview_submission = data.get("preview_submission")

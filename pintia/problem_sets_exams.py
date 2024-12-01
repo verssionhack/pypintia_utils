@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from typing import *
+from typing import List, Dict
+
 
 @dataclass
 class ExamConfig:
@@ -107,7 +108,7 @@ class ProblemSetConfig:
     def __init__(self, data: dict | None):
         if data is None:
             return None
-        self.compilers = [str(i) for i in (data.get("compilers") if data.get("compilers") != None else [])]
+        self.compilers = [str(i) for i in (data.get("compilers") if data.get("compilers") is not None else [])]
         self.multiple_choice_more_than_one_answer_problem_scoring_method = data.get("multiple_choice_more_than_one_answer_problem_scoring_method")
         self.scoring_rule = data.get("scoring_rule")
         self.hide_scoreboard = data.get("hide_scoreboard")

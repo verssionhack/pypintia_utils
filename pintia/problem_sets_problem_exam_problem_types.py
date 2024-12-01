@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from typing import *
+from typing import List, Dict
+
 
 @dataclass
 class Labels:
@@ -37,8 +38,8 @@ class ProblemSetsProblemExamProblemTypes:
     def __init__(self, data: dict | None):
         if data is None:
             return None
-        self.labels = [Labels(i) for i in (data.get("labels") if data.get("labels") != None else [])]
-        self.problem_types = [str(i) for i in (data.get("problem_types") if data.get("problem_types") != None else [])]
+        self.labels = [Labels(i) for i in (data.get("labels") if data.get("labels") is not None else [])]
+        self.problem_types = [str(i) for i in (data.get("problem_types") if data.get("problem_types") is not None else [])]
         self.exam_label_by_problem_set_problem_id = data.get("exam_label_by_problem_set_problem_id")
 
 

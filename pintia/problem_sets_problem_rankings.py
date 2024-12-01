@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from typing import *
+from typing import List, Dict
+
 
 @dataclass
 class User:
@@ -144,8 +145,8 @@ class CommonRankings:
     def __init__(self, data: dict | None):
         if data is None:
             return None
-        self.labels = [str(i) for i in (data.get("labels") if data.get("labels") != None else [])]
-        self.common_rankings = [CommonRankings(i) for i in (data.get("common_rankings") if data.get("common_rankings") != None else [])]
+        self.labels = [str(i) for i in (data.get("labels") if data.get("labels") is not None else [])]
+        self.common_rankings = [CommonRankings(i) for i in (data.get("common_rankings") if data.get("common_rankings") is not None else [])]
         self.self_ranking = SelfRanking(data.get("self_ranking"))
         self.label_by_problem_set_problem_id = data.get("label_by_problem_set_problem_id")
 
