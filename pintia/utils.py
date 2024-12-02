@@ -128,7 +128,8 @@ def parse_cookie(data: str):
         return cookies
     data = data.replace('\n', '').split(';')
     for ktvs in data:
-        if not '=' in ktvs:
+        if '=' not in ktvs:
+
             continue
         ktv = ktvs.split('=', 1)
         ktv[0] = ktv[0].strip().rstrip()

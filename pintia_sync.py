@@ -43,10 +43,11 @@ class Syncer:
             api = handle['api']
             handle['problem_sets'] = {}
             for problem_set in api.problem_sets(20).problem_sets:
-                if not problem_set.id in handle['problem_sets']:
+                if problem_set.id not in handle['problem_sets']:
+
                     handle['problem_sets'][problem_set.id] = {}
-                handle['problem_sets'][problem_set.id]['problem_set'] = problem_set
-                if not problem_set.id in has_problem_ids:
+                if problem_set.id not in has_problem_ids:
+
                     self.exams_problems[problem_set.id] = {}
 
                     has_problem_ids.append(problem_set.id)
@@ -81,9 +82,9 @@ class Syncer:
 
                 handle['problem_sets'][problem_set_id]['status'] = api.problem_sets_status(problem_set_id)
                 problem_set_status = handle['problem_sets'][problem_set_id]['status']
+                for problem in problem_set:
+                    if problem.id not in self.exams_problems[problem_set_id] and problem.problem_submission_status == ProblemSubmissionStatus.PROBLEM_ACCEPTED.value:
 
-                for problem in problem_set_status.problem_status:
-                    if not problem.id in self.exams_problems[problem_set_id] and problem.problem_submission_status == ProblemSubmissionStatus.PROBLEM_ACCEPTED.value:
                         print(f'{api._profile.user.nickname} provide {problem_set["name"]}:{problem.id}')
                         last_submission = api.problem_sets_exam_problem_last_submissions(problem_set_id, problem.id)
                         if problem.problem_type == ProblemType.CODE_COMPLETION.value:
